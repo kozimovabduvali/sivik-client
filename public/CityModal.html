@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Modal</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="hamburgerOverlay fixed top-0 left-0 w-full h-full bg-black/50 z-30 transition-opacity"
+    ></div>
+
+    <div
+      class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-full z-40  py-7.5 px-2.5 overflow-y-auto min-h-screen max-h-screen flex items-center justify-center"
+    >
+      <div class="flex flex-col gap-5 bg-white rounded-md p-12.5 w-full max-w-125 mt-14">
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl md:text-3xl font-medium">Выберите город</h2>
+          <button class="w-6.5 h-6.5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="#0749CA"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.71168 0.29681C1.32117 -0.0937284 0.688031 -0.0937284 0.297521 0.29681C-0.0929888 0.687349 -0.0929888 1.32054 0.297521 1.71108L11.5854 12.9998L0.297562 24.2877C-0.0929619 24.6782 -0.0929623 25.3114 0.297562 25.7019C0.688086 26.0924 1.32125 26.0924 1.71178 25.7019L12.9996 14.4141L24.2875 25.7028C24.678 26.0933 25.3111 26.0933 25.7016 25.7028C26.0921 25.3122 26.0921 24.679 25.7016 24.2885L14.4138 12.9999L25.7026 1.71105C26.0931 1.32053 26.0931 0.68736 25.7026 0.296836C25.3121 -0.0936886 24.6789 -0.0936886 24.2884 0.296836L12.9996 11.5856L1.71168 0.29681Z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="">
+          <div
+            class="flex items-center w-full bg-[#f5f5f5] py-4.5 rounded-md px-6 mb-2.5"
+          >
+            <input
+              type="search"
+              class="w-full bg-transparent outline-none"
+              value="Москва"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </div>
+          <p class="text-primary text-base font-medium">
+            Вы находитесь в этом городе?
+          </p>
+        </div>
+
+        <ul
+          class="custom-scroll-modal max-h-100 overflow-y-auto h-full flex flex-col gap-1 city__list"
+        >
+          <li><a href="https://sivik.ru/catalog/">Москва</a></li>
+          <li><a href="https://abakan.sivik.ru/catalog/">Абакан</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Актобе</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Алматы</a></li>
+          <li><a href="https://anadyr.sivik.ru/catalog/">Анадырь</a></li>
+          <li><a href="https://irk.sivik.ru/catalog/">Ангарск</a></li>
+          <li><a href="https://krd.sivik.ru/catalog/">Армавир</a></li>
+          <li>
+            <a href="https://arkhangelsk.sivik.ru/catalog/">Архангельск</a>
+          </li>
+          <li><a href="https://kz.sivik.ru/catalog/">Астана</a></li>
+          <li><a href="https://astrahan.sivik.ru/catalog/">Астрахань</a></li>
+          <li><a href="https://krsk.sivik.ru/catalog/">Ачинск</a></li>
+          <li><a href="https://az.sivik.ru/catalog/">Баку</a></li>
+          <li><a href="https://barnaul.sivik.ru/catalog/">Барнаул</a></li>
+          <li><a href="https://belgorod.sivik.ru/catalog/">Белгород</a></li>
+          <li><a href="https://barnaul.sivik.ru/catalog/">Бийск</a></li>
+          <li>
+            <a href="https://birobidzhan.sivik.ru/catalog/">Биробиджан</a>
+          </li>
+          <li>
+            <a href="https://blagoveschensk.sivik.ru/catalog/">Благовещенск</a>
+          </li>
+          <li><a href="https://irk.sivik.ru/catalog/">Братск</a></li>
+          <li><a href="https://bryansk.sivik.ru/catalog/">Брянск</a></li>
+          <li>
+            <a href="https://velnovgorod.sivik.ru/catalog/">Великий Новгород</a>
+          </li>
+          <li><a href="https://vl.sivik.ru/catalog/">Владивосток</a></li>
+          <li>
+            <a href="https://vladikavkaz.sivik.ru/catalog/">Владикавказ</a>
+          </li>
+          <li><a href="https://volgograd.sivik.ru/catalog/">Владимир</a></li>
+          <li><a href="https://volgograd.sivik.ru/catalog/">Волгоград</a></li>
+          <li><a href="https://rostov.sivik.ru/catalog/">Волгодонск</a></li>
+          <li><a href="https://volgograd.sivik.ru/catalog/">Волжский</a></li>
+          <li><a href="https://vologda.sivik.ru/catalog/">Вологда</a></li>
+          <li><a href="https://voronezh.sivik.ru/catalog/">Воронеж</a></li>
+          <li>
+            <a href="https://gorno-altaisk.sivik.ru/catalog/">Горно-Алтайск</a>
+          </li>
+          <li><a href="https://grozniy.sivik.ru/catalog/">Грозный</a></li>
+          <li><a href="https://mahachkala.sivik.ru/catalog/">Дербент</a></li>
+          <li><a href="https://dnr.sivik.ru/catalog/">Донецк</a></li>
+          <li><a href="https://ekb.sivik.ru/catalog/">Екатеринбург</a></li>
+          <li><a href="https://armenia.sivik.ru/catalog/">Ереван</a></li>
+          <li><a href="https://ivanovo.sivik.ru/catalog/">Иваново</a></li>
+          <li><a href="https://izhevsk.sivik.ru/catalog/">Ижевск</a></li>
+          <li><a href="https://irk.sivik.ru/catalog/">Иркутск</a></li>
+          <li><a href="https://yoshkarola.sivik.ru/catalog/">Йошкар-Ола</a></li>
+          <li><a href="https://kzn.sivik.ru/catalog/">Казань</a></li>
+          <li>
+            <a href="https://kaliningrad.sivik.ru/catalog/">Калининград</a>
+          </li>
+          <li><a href="https://kaluga.sivik.ru/catalog/">Калуга</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Караганда</a></li>
+          <li><a href="https://kemerovo.sivik.ru/catalog/">Кемерово</a></li>
+          <li><a href="https://kirov.sivik.ru/catalog/">Киров</a></li>
+          <li><a href="https://stavropol.sivik.ru/catalog/">Кисловодск</a></li>
+          <li><a href="https://vladimir.sivik.ru/catalog/">Ковров</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Кокшетау</a></li>
+          <li><a href="https://kostroma.sivik.ru/catalog/">Кострома</a></li>
+          <li><a href="https://krd.sivik.ru/catalog/">Краснодар</a></li>
+          <li><a href="https://krsk.sivik.ru/catalog/">Красноярск</a></li>
+          <li><a href="https://kurgan.sivik.ru/catalog/">Курган</a></li>
+          <li><a href="https://kursk.sivik.ru/catalog/">Курск</a></li>
+          <li><a href="https://kizil.sivik.ru/catalog/">Кызыл</a></li>
+          <li><a href="https://lipetsk.sivik.ru/catalog/">Липецк</a></li>
+          <li><a href="https://lnr.sivik.ru/catalog/">Луганск</a></li>
+          <li><a href="https://magadan.sivik.ru/catalog/">Магадан</a></li>
+          <li><a href="https://magas.sivik.ru/catalog/">Магас</a></li>
+          <li>
+            <a href="https://chelyabinsk.sivik.ru/catalog/">Магнитогорск</a>
+          </li>
+          <li><a href="https://maikop.sivik.ru/catalog/">Майкоп</a></li>
+          <li><a href="https://mahachkala.sivik.ru/catalog/">Махачкала</a></li>
+          <li><a href="https://belarus.sivik.ru/catalog/">Минск</a></li>
+          <li><a href="https://murmansk.sivik.ru/catalog/">Мурманск</a></li>
+          <li><a href="https://vladimir.sivik.ru/catalog/">Муром</a></li>
+          <li><a href="https://kzn.sivik.ru/catalog/">Набережные Челны</a></li>
+          <li><a href="https://nalchik.sivik.ru/catalog/">Нальчик</a></li>
+          <li><a href="https://naryan-mar.sivik.ru/catalog/">Нарьян-Мар</a></li>
+          <li><a href="https://ufa.sivik.ru/catalog/">Нефтекамск</a></li>
+          <li><a href="https://hmao.sivik.ru/catalog/">Нефтеюганск</a></li>
+          <li><a href="https://hmao.sivik.ru/catalog/">Нижневартовск</a></li>
+          <li><a href="https://nn.sivik.ru/catalog/">Нижний Новгород</a></li>
+          <li><a href="https://ekb.sivik.ru/catalog/">Нижний Тагил</a></li>
+          <li><a href="https://kemerovo.sivik.ru/catalog/">Новокузнецк</a></li>
+          <li><a href="https://krd.sivik.ru/catalog/">Новороссийск</a></li>
+          <li><a href="https://nsk.sivik.ru/catalog/">Новосибирск</a></li>
+          <li><a href="https://rostov.sivik.ru/catalog/">Новочеркасск</a></li>
+          <li>
+            <a href="https://salekhard.sivik.ru/catalog/">Новый Уренгой</a>
+          </li>
+          <li><a href="https://krsk.sivik.ru/catalog/">Норильск</a></li>
+          <li><a href="https://salekhard.sivik.ru/catalog/">Ноябрьск</a></li>
+          <li><a href="https://ufa.sivik.ru/catalog/">Октябрьский</a></li>
+          <li><a href="https://omsk.sivik.ru/catalog/">Омск</a></li>
+          <li><a href="https://orel.sivik.ru/catalog/">Орёл</a></li>
+          <li><a href="https://orenburg.sivik.ru/catalog/">Оренбург</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Павлодар</a></li>
+          <li><a href="https://penza.sivik.ru/catalog/">Пенза</a></li>
+          <li><a href="https://perm.sivik.ru/catalog/">Пермь</a></li>
+          <li>
+            <a href="https://petrozavodsk.sivik.ru/catalog/">Петрозаводск</a>
+          </li>
+          <li>
+            <a href="https://p-kamchatskiy.sivik.ru/catalog/"
+              >Петропавловск-Камчатский</a
+            >
+          </li>
+          <li><a href="https://kemerovo.sivik.ru/catalog/">Прокопьевск</a></li>
+          <li><a href="https://pskov.sivik.ru/catalog/">Псков</a></li>
+          <li><a href="https://stavropol.sivik.ru/catalog/">Пятигорск</a></li>
+          <li><a href="https://rostov.sivik.ru/catalog/">Ростов-на-Дону</a></li>
+          <li><a href="https://barnaul.sivik.ru/catalog/">Рубцовск</a></li>
+          <li><a href="https://ryazan.sivik.ru/catalog/">Рязань</a></li>
+          <li><a href="https://ufa.sivik.ru/catalog/">Салават</a></li>
+          <li><a href="https://samara.sivik.ru/catalog/">Самара</a></li>
+          <li><a href="https://spb.sivik.ru/catalog/">Санкт-Петербург</a></li>
+          <li><a href="https://saransk.sivik.ru/catalog/">Саранск</a></li>
+          <li><a href="https://saratov.sivik.ru/catalog/">Саратов</a></li>
+          <li>
+            <a href="https://sevastopol.sivik.ru/catalog/">Севастополь</a>
+          </li>
+          <li>
+            <a href="https://arkhangelsk.sivik.ru/catalog/">Северодвинск</a>
+          </li>
+          <li><a href="https://kz.sivik.ru/catalog/">Семей</a></li>
+          <li><a href="https://krm.sivik.ru/catalog/">Симферополь</a></li>
+          <li><a href="https://smolensk.sivik.ru/catalog/">Смоленск</a></li>
+          <li><a href="https://krd.sivik.ru/catalog/">Сочи</a></li>
+          <li><a href="https://stavropol.sivik.ru/catalog/">Ставрополь</a></li>
+          <li><a href="https://belgorod.sivik.ru/catalog/">Старый Оскол</a></li>
+          <li><a href="https://ufa.sivik.ru/catalog/">Стерлитамак</a></li>
+          <li><a href="https://hmao.sivik.ru/catalog/">Сургут</a></li>
+          <li><a href="https://syktyvkar.sivik.ru/catalog/">Сыктывкар</a></li>
+          <li><a href="https://rostov.sivik.ru/catalog/">Таганрог</a></li>
+          <li><a href="https://tambov.sivik.ru/catalog/">Тамбов</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Тараз</a></li>
+          <li><a href="https://uz.sivik.ru/catalog/">Ташкент</a></li>
+          <li><a href="https://tver.sivik.ru/catalog/">Тверь</a></li>
+          <li><a href="https://samara.sivik.ru/catalog/">Тольятти</a></li>
+          <li><a href="https://tomsk.sivik.ru/catalog/">Томск</a></li>
+          <li><a href="https://tula.sivik.ru/catalog/">Тула</a></li>
+          <li><a href="https://tyumen.sivik.ru/catalog/">Тюмень</a></li>
+          <li><a href="https://ulan-ude.sivik.ru/catalog/">Улан-Удэ</a></li>
+          <li><a href="https://ulyanovsk.sivik.ru/catalog/">Ульяновск</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Уральск</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Усть-Каменогорск</a></li>
+          <li><a href="https://ufa.sivik.ru/catalog/">Уфа</a></li>
+          <li><a href="https://hbr.sivik.ru/catalog/">Хабаровск</a></li>
+          <li><a href="https://kavkaz.sivik.ru/catalog/">Хасавюрт</a></li>
+          <li><a href="https://cheboksary.sivik.ru/catalog/">Чебоксары</a></li>
+          <li><a href="https://chelyabinsk.sivik.ru/catalog/">Челябинск</a></li>
+          <li><a href="https://vologda.sivik.ru/catalog/">Череповец</a></li>
+          <li><a href="https://cherkessk.sivik.ru/catalog/">Черкесск</a></li>
+          <li><a href="https://chita.sivik.ru/catalog/">Чита</a></li>
+          <li><a href="https://rostov.sivik.ru/catalog/">Шахты</a></li>
+          <li><a href="https://kz.sivik.ru/catalog/">Шымкент</a></li>
+          <li><a href="https://elista.sivik.ru/catalog/">Элиста</a></li>
+          <li><a href="https://saratov.sivik.ru/catalog/">Энгельс</a></li>
+          <li>
+            <a href="https://y-sakhalinsk.sivik.ru/catalog/">Южно-Сахалинск</a>
+          </li>
+          <li><a href="https://yakutsk.sivik.ru/catalog/">Якутск</a></li>
+          <li><a href="https://yarslvl.sivik.ru/catalog/">Ярославль</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
