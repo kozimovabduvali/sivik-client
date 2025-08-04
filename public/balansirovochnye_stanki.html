@@ -138,12 +138,16 @@
 
           <!-- Right -->
           <div class="w-full max-w-293.5">
-            <div>
+            <div x-data="{ view: 'grid' }">
               <!-- View Mode Switcher -->
               <div class="flex items-center justify-between border-b border-light-gray pb-4.5 mb-4.5">
+                <button class="text-primary md:text-xl block xl:hidden">
+                  Фильтры
+                </button>
+
                 <div x-data="{ open: false }" class="relative">
                   <button @click="open = !open" class="text-primary text-left inline-flex items-center gap-2.5">
-                    <span class="text-xl">Сначала недорогие</span>
+                    <span class="md:text-xl">Сначала недорогие</span>
                     <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"
                       :class="{ 'rotate-180': open }" class="transition-transform duration-300">
                       <path d="M9 1L5 5L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
@@ -151,7 +155,7 @@
                   </button>
 
                   <!-- Dropdown -->
-                  <div x-show="open" class="absolute w-full bg-white rounded-md shadow-lg p-2 space-y-2 mt-2">
+                  <div x-show="open" class="absolute z-20 w-full bg-white rounded-md shadow-lg p-2 space-y-2 mt-2">
                     <button
                       class="transition duration-200 hover:opacity-75 block w-full text-left text-sm md:text-base">По
                       популярности</button>
@@ -160,9 +164,7 @@
                       цене</button>
                   </div>
                 </div>
-              </div>
 
-              <div x-data="{ view: 'grid' }">
                 <!-- View Mode Toggle Buttons -->
                 <div class="view-mode__controls items-center inline-flex  gap-4.5">
                   <!-- Grid View -->
@@ -210,12 +212,15 @@
                     </svg>
                   </button>
                 </div>
+              </div>
 
+              <div>
                 <!-- Items container -->
                 <div :class="{
-                  'grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5': view === 'grid',
-                  'flex flex-col gap-4': view === 'flex',
-                  'flex flex-col gap-4': view === 'list'
+                  'grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5': view === 'grid',
+                  'flex flex-col !gap-4': view === 'flex',
+                  'flex flex-col !gap-4 text-center md:text-left': view === 'list',
+                  'flex flex-col !gap-2.5 md:!gap-4 overflow-clip': true
                 }">
 
                   <!-- Item -->
@@ -228,7 +233,7 @@
                     <!-- Image -->
                     <a href="#" :class="{
                       'block w-full h-[260px]': view === 'grid',
-                      'block size-[160px]': view === 'flex',
+                      'block size-[122px] md:size-[160px]': view === 'flex',
                       'hidden w-full h-0': view === 'list',
                       'overflow-hidden rounded shrink-0 bg-brand-gray relative': true
                     }">
@@ -247,7 +252,8 @@
                               class="size-full object-cover object-center rounded">
                           </div>
                         </div>
-                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2"></div>
+                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2">
+                        </div>
                       </div>
                     </a>
 
@@ -258,7 +264,8 @@
                       'w-full flex py-3.75 px-5': true
                     }">
                       <!-- Product title -->
-                      <a href="#" class="w-full h-max lg:text-xl font-semibold">Балансировочный станок GALAXY PLUS</a>
+                      <a href="#" class="w-full h-max text-sm lg:text-xl font-semibold">Балансировочный станок GALAXY
+                        PLUS</a>
                       <div :class="{
                         'hidden': view === 'grid',
                         'group-hover:block hidden md:!hidden': view === 'flex' || view === 'list',
@@ -266,11 +273,14 @@
                         'flex md:hidden items-center gap-2.5': true
 
                       }">
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
-                            stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
+                              stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
                       </div>
 
                       <p :class="{
@@ -293,6 +303,413 @@
                     </div>
                   </div>
 
+                  <!-- Item -->
+                  <div :class="{
+                      'flex-col': view === 'grid',
+                      'flex-row': view === 'flex',
+                      'flex-row': view === 'list',
+                      'group border flex items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white': true
+                    }">
+                    <!-- Image -->
+                    <a href="#" :class="{
+                      'block w-full h-[260px]': view === 'grid',
+                      'block size-[122px] md:size-[160px]': view === 'flex',
+                      'hidden w-full h-0': view === 'list',
+                      'overflow-hidden rounded shrink-0 bg-brand-gray relative': true
+                    }">
+                      <div class="!relative !z-0 swiper sivik-swiper !h-full">
+                        <div class="swiper-wrapper !h-full">
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-2.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-1.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-3.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div :class="{
+                      'text-center flex-col items-center gap-3.5': view === 'grid',
+                      ' flex-col md:flex-row md:items-center gap-x-5 gap-y-1.5 py-3 md:py-5': view === 'flex',
+                      'flex-col md:flex-row items-center text-center md:text-left py-5 gap-x-5 gap-y-1.5': view === 'list',
+                      'w-full flex py-3.75 px-5': true
+                    }">
+                      <!-- Product title -->
+                      <a href="#" class="w-full h-max text-sm lg:text-xl font-semibold">Балансировочный
+                        станок STELLAR (p)
+                      </a>
+                      <div :class="{
+                        'hidden': view === 'grid',
+                        'group-hover:block hidden md:!hidden': view === 'flex' || view === 'list',
+
+                        'flex md:hidden items-center gap-2.5': true
+
+                      }">
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
+                              stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <p :class="{
+                          'text-[13px]': view === 'grid',
+                          'text-[13px]': view === 'flex',
+                          'lg:text-xl': view === 'list',
+                          'shrink-0 font-bold h-max': true
+                        }">
+                        249 000 ₽
+                      </p>
+
+                      <!-- Add to cart button -->
+                      <button :class="{
+                        'hidden group-hover:flex w-full': view === 'grid',
+                        'hidden md:block': view === 'flex' || view === 'list',
+                        'shrink-0 px-4 md:p-7 py-2 md:py-3 uppercase font-medium h-max bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white': true
+                      }">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div :class="{
+                      'flex-col': view === 'grid',
+                      'flex-row': view === 'flex',
+                      'flex-row': view === 'list',
+                      'group border flex items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white': true
+                    }">
+                    <!-- Image -->
+                    <a href="#" :class="{
+                      'block w-full h-[260px]': view === 'grid',
+                      'block size-[122px] md:size-[160px]': view === 'flex',
+                      'hidden w-full h-0': view === 'list',
+                      'overflow-hidden rounded shrink-0 bg-brand-gray relative': true
+                    }">
+                      <div class="!relative !z-0 swiper sivik-swiper !h-full">
+                        <div class="swiper-wrapper !h-full">
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-2.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-1.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-3.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div :class="{
+                      'text-center flex-col items-center gap-3.5': view === 'grid',
+                      ' flex-col md:flex-row md:items-center gap-x-5 gap-y-1.5 py-3 md:py-5': view === 'flex',
+                      'flex-col md:flex-row items-center text-center md:text-left py-5 gap-x-5 gap-y-1.5': view === 'list',
+                      'w-full flex py-3.75 px-5': true
+                    }">
+                      <!-- Product title -->
+                      <a href="#" class="w-full h-max text-sm lg:text-xl font-semibold">
+                        Балансировочный
+                        станок STELLAR
+                      </a>
+                      <div :class="{
+                        'hidden': view === 'grid',
+                        'group-hover:block hidden md:!hidden': view === 'flex' || view === 'list',
+
+                        'flex md:hidden items-center gap-2.5': true
+
+                      }">
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
+                              stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <p :class="{
+                          'text-[13px]': view === 'grid',
+                          'text-[13px]': view === 'flex',
+                          'lg:text-xl': view === 'list',
+                          'shrink-0 font-bold h-max': true
+                        }">
+                        249 000 ₽
+                      </p>
+
+                      <!-- Add to cart button -->
+                      <button :class="{
+                        'hidden group-hover:flex w-full': view === 'grid',
+                        'hidden md:block': view === 'flex' || view === 'list',
+                        'shrink-0 px-4 md:p-7 py-2 md:py-3 uppercase font-medium h-max bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white': true
+                      }">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div :class="{
+                      'flex-col': view === 'grid',
+                      'flex-row': view === 'flex',
+                      'flex-row': view === 'list',
+                      'group border flex items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white': true
+                    }">
+                    <!-- Image -->
+                    <a href="#" :class="{
+                      'block w-full h-[260px]': view === 'grid',
+                      'block size-[122px] md:size-[160px]': view === 'flex',
+                      'hidden w-full h-0': view === 'list',
+                      'overflow-hidden rounded shrink-0 bg-brand-gray relative': true
+                    }">
+                      <div class="!relative !z-0 swiper sivik-swiper !h-full">
+                        <div class="swiper-wrapper !h-full">
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-2.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-1.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-3.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div :class="{
+                      'text-center flex-col items-center gap-3.5': view === 'grid',
+                      ' flex-col md:flex-row md:items-center gap-x-5 gap-y-1.5 py-3 md:py-5': view === 'flex',
+                      'flex-col md:flex-row items-center text-center md:text-left py-5 gap-x-5 gap-y-1.5': view === 'list',
+                      'w-full flex py-3.75 px-5': true
+                    }">
+                      <!-- Product title -->
+                      <a href="#" class="w-full h-max text-sm lg:text-xl font-semibold">
+                        Балансировочный
+                        станок GELIOS
+                      </a>
+                      <div :class="{
+                        'hidden': view === 'grid',
+                        'group-hover:block hidden md:!hidden': view === 'flex' || view === 'list',
+
+                        'flex md:hidden items-center gap-2.5': true
+
+                      }">
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
+                              stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <p :class="{
+                          'text-[13px]': view === 'grid',
+                          'text-[13px]': view === 'flex',
+                          'lg:text-xl': view === 'list',
+                          'shrink-0 font-bold h-max': true
+                        }">
+                        249 000 ₽
+                      </p>
+
+                      <!-- Add to cart button -->
+                      <button :class="{
+                        'hidden group-hover:flex w-full': view === 'grid',
+                        'hidden md:block': view === 'flex' || view === 'list',
+                        'shrink-0 px-4 md:p-7 py-2 md:py-3 uppercase font-medium h-max bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white': true
+                      }">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Item -->
+                  <div :class="{
+                      'flex-col': view === 'grid',
+                      'flex-row': view === 'flex',
+                      'flex-row': view === 'list',
+                      'group border flex items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white': true
+                    }">
+                    <!-- Image -->
+                    <a href="#" :class="{
+                      'block w-full h-[260px]': view === 'grid',
+                      'block size-[122px] md:size-[160px]': view === 'flex',
+                      'hidden w-full h-0': view === 'list',
+                      'overflow-hidden rounded shrink-0 bg-brand-gray relative': true
+                    }">
+                      <div class="!relative !z-0 swiper sivik-swiper !h-full">
+                        <div class="swiper-wrapper !h-full">
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-2.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-1.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-3.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div :class="{
+                      'text-center flex-col items-center gap-3.5': view === 'grid',
+                      ' flex-col md:flex-row md:items-center gap-x-5 gap-y-1.5 py-3 md:py-5': view === 'flex',
+                      'flex-col md:flex-row items-center text-center md:text-left py-5 gap-x-5 gap-y-1.5': view === 'list',
+                      'w-full flex py-3.75 px-5': true
+                    }">
+                      <!-- Product title -->
+                      <a href="#" class="w-full h-max text-sm lg:text-xl font-semibold">
+                        Балансировочный
+                        станок STELLAR
+                      </a>
+                      <div :class="{
+                        'hidden': view === 'grid',
+                        'group-hover:block hidden md:!hidden': view === 'flex' || view === 'list',
+
+                        'flex md:hidden items-center gap-2.5': true
+
+                      }">
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
+                              stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <p :class="{
+                          'text-[13px]': view === 'grid',
+                          'text-[13px]': view === 'flex',
+                          'lg:text-xl': view === 'list',
+                          'shrink-0 font-bold h-max': true
+                        }">
+                        249 000 ₽
+                      </p>
+
+                      <!-- Add to cart button -->
+                      <button :class="{
+                        'hidden group-hover:flex w-full': view === 'grid',
+                        'hidden md:block': view === 'flex' || view === 'list',
+                        'shrink-0 px-4 md:p-7 py-2 md:py-3 uppercase font-medium h-max bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white': true
+                      }">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div :class="{
+                      'flex-col': view === 'grid',
+                      'flex-row': view === 'flex',
+                      'flex-row': view === 'list',
+                      'group border flex items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white': true
+                    }">
+                    <!-- Image -->
+                    <a href="#" :class="{
+                      'block w-full h-[260px]': view === 'grid',
+                      'block size-[122px] md:size-[160px]': view === 'flex',
+                      'hidden w-full h-0': view === 'list',
+                      'overflow-hidden rounded shrink-0 bg-brand-gray relative': true
+                    }">
+                      <div class="!relative !z-0 swiper sivik-swiper !h-full">
+                        <div class="swiper-wrapper !h-full">
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-2.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-1.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                          <div class="swiper-slide overflow-hidden !h-full">
+                            <img src="./assets/images/catalog/Background-3.png" alt="Product"
+                              class="size-full object-cover object-center rounded">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination flex flex-wrap items-center justify-center gap-2 !mb-3 px-2">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div :class="{
+                      'text-center flex-col items-center gap-3.5': view === 'grid',
+                      ' flex-col md:flex-row md:items-center gap-x-5 gap-y-1.5 py-3 md:py-5': view === 'flex',
+                      'flex-col md:flex-row items-center text-center md:text-left py-5 gap-x-5 gap-y-1.5': view === 'list',
+                      'w-full flex py-3.75 px-5': true
+                    }">
+                      <!-- Product title -->
+                      <a href="#" class="w-full h-max text-sm lg:text-xl font-semibold">
+                        Балансировочный
+                        станок GELIOS
+                      </a>
+                      <div :class="{
+                        'hidden': view === 'grid',
+                        'group-hover:block hidden md:!hidden': view === 'flex' || view === 'list',
+
+                        'flex md:hidden items-center gap-2.5': true
+
+                      }">
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.87944 8.4162V7.66096C3.87944 5.85823 4.61048 4.12934 5.91175 2.85462C7.21302 1.5799 8.97791 0.86377 10.8182 0.86377C12.6585 0.86377 14.4233 1.5799 15.7246 2.85462C17.0259 4.12934 17.7569 5.85823 17.7569 7.66096V8.4162M7.7343 12.9477V15.9686M13.9021 12.9477V15.9686M20.6249 10.1079C20.6513 9.89711 20.6319 9.68321 20.5682 9.48019C20.5044 9.27718 20.3977 9.08962 20.2549 8.92977C20.1104 8.76865 19.9325 8.63951 19.7331 8.55096C19.5337 8.46241 19.3173 8.41647 19.0984 8.4162H2.53795C2.31902 8.41647 2.10265 8.46241 1.90325 8.55096C1.70385 8.63951 1.52599 8.76865 1.38149 8.92977C1.23871 9.08962 1.13195 9.27718 1.06819 9.48019C1.00442 9.68321 0.985079 9.89711 1.01143 10.1079L2.16788 19.1709C2.21333 19.5393 2.39564 19.8784 2.68004 20.1236C2.96443 20.3688 3.331 20.5028 3.70983 20.5001H17.9574C18.3362 20.5028 18.7028 20.3688 18.9872 20.1236C19.2716 19.8784 19.4539 19.5393 19.4993 19.1709L20.6249 10.1079Z"
+                              stroke="#0749CA" stroke-width="1.51049" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a>
+                      </div>
+
+                      <p :class="{
+                          'text-[13px]': view === 'grid',
+                          'text-[13px]': view === 'flex',
+                          'lg:text-xl': view === 'list',
+                          'shrink-0 font-bold h-max': true
+                        }">
+                        249 000 ₽
+                      </p>
+
+                      <!-- Add to cart button -->
+                      <button :class="{
+                        'hidden group-hover:flex w-full': view === 'grid',
+                        'hidden md:block': view === 'flex' || view === 'list',
+                        'shrink-0 px-4 md:p-7 py-2 md:py-3 uppercase font-medium h-max bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white': true
+                      }">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
