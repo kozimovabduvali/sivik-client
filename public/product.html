@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="./css/output.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <!-- Tittle & Desc -->
+  <div class="pt-8 md:pt-0">
+    <ul class="breadcrumbs__list hidden md:flex items-center justify-center gap-4 text-center text-15/6 py-10 px-7.5">
+      <li class="breadcrumbs__item">
+        <a class="custom-hover" href="#">
+          <span>Главная</span>
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="custom-hover" href="#">
+          <span>Каталог</span>
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="custom-hover" href="#">
+          <span>Балансировочные станки</span>
+        </a>
+        <meta itemprop="position" content="3">
+      </li>
+      <li class="breadcrumbs__item">
+        <span itemprop="name">Легковые балансировочные станки</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="bg-brand-gray xl:px-5">
+      <div class="container-base py-5">
+        <div class="grid md:grid-cols-2 gap-5 lg:gap-7 xl:gap-10 mb-5">
+          <!-- Left -->
+          <div class="group relative flex items-center justify-center max-w-190.25 overflow-hidden">
+            <img
+              class="w-full aspect-square cursor-pointer relative z-0 object-cover transition duration-200 group-hover:scale-105"
+              src="./assets/images/catalog/Background.png" alt="Img">
+
+            <div class="absolute z-10 top-0 left-0 translate-x-2 md:translate-x-10 translate-y-4 flex flex-col gap-3">
+              <button class="size-10 md:size-15 overflow-hidden rounded-2xl">
+                <img src="./assets/images/360-degrees.png" alt="Img 360">
+              </button>
+
+              <button class="text-15 flex items-center gap-4 transition duration-200 hover:text-primary">
+                <svg class="size-4 md:size-5" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_52_497)">
+                    <path
+                      d="M18.3647 2.31158C16.3976 0.530938 13.472 0.851225 11.6663 2.83014L10.9591 3.60417L10.252 2.83014C8.44997 0.851225 5.52075 0.530938 3.55358 2.31158C1.29923 4.35532 1.18077 8.02336 3.1982 10.2387L10.1443 17.8569C10.593 18.3488 11.3217 18.3488 11.7704 17.8569L18.7165 10.2387C20.7376 8.02336 20.6191 4.35532 18.3647 2.31158Z"
+                      stroke="currentColor" stroke-width="1.5" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_52_497">
+                      <rect width="20" height="20" fill="white" transform="translate(0.943848 -0.00488281)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Избранное</span>
+              </button>
+              <button class="text-15 flex items-center gap-4 transition duration-200 hover:text-primary">
+                <svg class="h-4 md:h-5.25" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.68921 19.7814V8.94806M8.95633 19.7814V1.20996M16.1981 19.7814V5.03349"
+                    stroke="currentColor" stroke-width="1.42857" stroke-linecap="round" />
+                </svg>
+                <span>Сравнить</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="pt-6 lg:pt-10 xl:pt-15">
+            <div class="text-center md:text-left mb-5">
+              <h1 class="font-medium text-2xl lg:text-[28px] uppercase mb-1">
+                Балансировочный станок STELLAR (p) LASER
+                c диагностическими функциями
+              </h1>
+              <span class="text-15 text-neutral">
+                СБМП-60/3D Pro (УЗ, ЭМВ, БСИ)
+              </span>
+            </div>
+            <p class="max-w-140 text-neutral font-light mb-6">
+              Высокоскоростной балансировочный стенд
+              нового поколения для премиального сервиса
+            </p>
+
+            <ul class="lg:max-w-140 text-[#414042] font-light list-disc !ml-4 mb-5">
+              <li>
+                <p>
+                  Бесконтактная лазерная система измерения
+                </p>
+              </li>
+              <li>
+                <p>
+                  Технология диагностики протектора колес
+                </p>
+              </li>
+              <li>
+                <p>
+                  Автоматический зажим второго поколения -
+                  уникальный запатентованный
+                  пневматический вал
+                </p>
+              </li>
+              <li>
+                <p>
+                  Сенсорный монитор. Новый удобный и
+                  понятный 3D-интерфейс
+                </p>
+              </li>
+            </ul>
+
+            <div class="flex flex-col md:flex-row items-center gap-x-15 gap-y-3 mb-3">
+              <!-- Cost -->
+              <p class="font-medium text-[2rem]">
+                735 000 ₽
+              </p>
+
+              <!-- Drob Down -->
+              <div x-data="{ open: false }" class="relative inline-block z-20">
+                <!-- Toggle Button -->
+                <button @click="open = !open" class="bg-white flex items-center gap-2.5 rounded px-3 py-2">
+                  <span class="leading-none">
+                    Синий RAL5017
+                  </span>
+                  <svg :class="{'rotate-180 transition duration-300': open,
+                    'transition duration-300': true
+                  }" xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                    <g clip-path="url(#clip0_52_213)">
+                      <path d="M2.08887 1.24512L5.46387 4.62012L8.83887 1.24512" stroke="#333333" stroke-width="1.125"
+                        stroke-linecap="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_52_213">
+                        <rect width="9" height="5.625" fill="white" transform="translate(0.963867 0.682617)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+
+                <!-- Dropdown List -->
+                <div x-show="open" @click.outside="open = false" x-transition
+                  class="absolute text-left w-46.5 translate-y-2.5 bg-white flex flex-col items-center gap-2 rounded px-3 py-2 pr-5 shadow-md">
+                  <a class="text-lg transition duration-200 hover:text-primary" href="#">
+                    Серый RAL7016
+                  </a>
+                  <a class="text-lg transition duration-200 hover:text-primary" href="#">
+                    Белый RAL9003
+                  </a>
+                  <a class="text-lg transition duration-200 hover:text-primary" href="#">
+                    Черный RAL9005
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row max-md:items-center gap-x-5 gap-y-3 mb-7 md:mb-10">
+              <button
+                class="w-max rounded-sm bg-primary text-white font-medium uppercase text-xl leading-none px-10 py-4 transition duration-200 hover:bg-primary/75">
+                В корзину
+              </button>
+
+              <button
+                class="w-max border border-primary rounded-sm text-primary font-medium uppercase text-xl leading-none px-10 py-4 transition duration-200 hover:bg-primary hover:text-white">
+                Консультация
+              </button>
+            </div>
+
+            <div class="w-full min-lg:max-w-150 hidden xl:flex flex-wrap gap-5">
+              <!-- 1 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__1.svg" alt="svg">
+              </button>
+              <!-- 2 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__2.svg" alt="svg">
+              </button>
+              <!-- 3 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__3.svg" alt="svg">
+              </button>
+              <!-- 4 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__4.svg" alt="svg">
+              </button>
+              <!-- 5 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__5.svg" alt="svg">
+              </button>
+              <!-- 6 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__6.svg" alt="svg">
+              </button>
+              <!-- 7 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__7.svg" alt="svg">
+              </button>
+              <!-- 8 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__8.svg" alt="svg">
+              </button>
+              <!-- 9 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__9.svg" alt="svg">
+              </button>
+              <!-- 10 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__10.svg" alt="svg">
+              </button>
+              <!-- 11 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__11.svg" alt="svg">
+              </button>
+              <!-- 12 -->
+              <button
+                class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+                <img class="object-cover" src="./assets/images/product/hero-brand__12.svg" alt="svg">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex xl:hidden flex-wrap gap-1.5 lg:gap-2.5">
+          <!-- 1 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__1.svg" alt="svg">
+          </button>
+          <!-- 2 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__2.svg" alt="svg">
+          </button>
+          <!-- 3 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__3.svg" alt="svg">
+          </button>
+          <!-- 4 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__4.svg" alt="svg">
+          </button>
+          <!-- 5 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__5.svg" alt="svg">
+          </button>
+          <!-- 6 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__6.svg" alt="svg">
+          </button>
+          <!-- 7 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__7.svg" alt="svg">
+          </button>
+          <!-- 8 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__8.svg" alt="svg">
+          </button>
+          <!-- 9 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__9.svg" alt="svg">
+          </button>
+          <!-- 10 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__10.svg" alt="svg">
+          </button>
+          <!-- 11 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__11.svg" alt="svg">
+          </button>
+          <!-- 12 -->
+          <button
+            class="size-15 md:size-18.75 lg:size-20 rounded-[20px] bg-white overflow-hidden inline-flex items-center justify-center border border-transparent transition duration-200 hover:border-primary p-1">
+            <img class="object-cover" src="./assets/images/product/hero-brand__12.svg" alt="svg">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product images Swiper -->
+    <section id="productSwiper" class="container-base bg-brand-gray mt-5 mb-8 lg:mb-15 py-5">
+      <div class="swiper productSwiper !-mx-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="h-87 md:h-70 lg:h-90 overflow-hidden group cursor-pointer">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/swipe-1.png" alt="img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-87 md:h-70 lg:h-90 overflow-hidden group cursor-pointer">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/swipe-3.png" alt="img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-87 md:h-70 lg:h-90 overflow-hidden group cursor-pointer">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/swipe-2.png" alt="img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-87 md:h-70 lg:h-90 overflow-hidden group cursor-pointer">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/swipe-1.png" alt="img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-87 md:h-70 lg:h-90 overflow-hidden group cursor-pointer">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/swipe-2.png" alt="img">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-87 md:h-70 lg:h-90 overflow-hidden group cursor-pointer">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/swipe-3.png" alt="img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ADVANTAGES -->
+    <section id="advantages" class="container-base mb-7.5">
+      <div class="mb-7.5">
+        <h2 class="uppercase font-medium text-xl lg:text-[2rem] text-center">
+          ПРЕИМУЩЕСТВА
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-7 md:gap-10">
+        <!-- 1 -->
+        <div>
+          <h4 class="uppercase md:text-2xl mb-3.75 lg:mb-7">
+            GREEN WEIGHT 2.0. ЭКОНОМИЯ НА КАЖДОМ КОЛЕСЕ
+          </h4>
+
+          <div class="flex max-xl:flex-col gap-x-8 gap-y-4">
+            <!-- Left -->
+            <div class="md:max-w-90.75 w-full h-85 group overflow-hidden">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/car-wheel-1.png" alt="Img">
+            </div>
+
+            <!-- Right -->
+            <div x-data="{
+              showFull: false,
+              listEl: null,
+              contentTallEnough: false,
+              init() {
+                this.checkHeight();
+                window.addEventListener('resize', () => this.checkHeight());
+              },
+              checkHeight() {
+                const maxHeight = window.innerWidth < 768 ? 360 : 320;
+                this.$nextTick(() => {
+                  this.contentTallEnough = this.listEl.scrollHeight > maxHeight;
+                });
+              }
+            }" x-init="init">
+              <!-- UL -->
+              <ul x-ref="listEl" x-bind="listEl = $refs.listEl"
+                class="max-md:text-sm font-light list-disc pl-5 overflow-hidden"
+                :class="showFull ? 'max-h-screen mb-5' : 'max-h-[360px] md:max-h-[320px]'">
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+              </ul>
+
+
+              <!-- Gradient & Button (faqat height yetarlicha katta bo‘lsa ko‘rinadi) -->
+              <template x-if="contentTallEnough">
+                <div class="relative">
+                  <!-- Gradient -->
+                  <div
+                    class="absolute top-0 left-0 -translate-y-full gradient w-full h-6 transition-opacity duration-300"
+                    :class="showFull ? 'hidden' : 'block'"></div>
+
+                  <!-- Toggle Button -->
+                  <button class="text-primary mt-2" @click="showFull = !showFull">
+                    <span x-text="showFull ? 'Скрыть' : 'Показать всё'"></span>
+                  </button>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div>
+          <h4 class="uppercase md:text-2xl mb-3.75 lg:mb-7">
+            LaserVision - бесконтактная лазерная система
+            измерения параметров
+          </h4>
+
+          <div class="flex max-xl:flex-col gap-x-8 gap-y-4">
+            <!-- Left -->
+            <div class="md:max-w-90.75 w-full h-85 group overflow-hidden">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/car-wheel-2.png" alt="Img">
+            </div>
+
+            <!-- Right -->
+            <div x-data="{
+              showFull: false,
+              listEl: null,
+              contentTallEnough: false,
+              init() {
+                this.checkHeight();
+                window.addEventListener('resize', () => this.checkHeight());
+              },
+              checkHeight() {
+                const maxHeight = window.innerWidth < 768 ? 360 : 320;
+                this.$nextTick(() => {
+                  this.contentTallEnough = this.listEl.scrollHeight > maxHeight;
+                });
+              }
+            }" x-init="init">
+              <!-- UL -->
+              <ul x-ref="listEl" x-bind="listEl = $refs.listEl"
+                class="max-md:text-sm font-light list-disc pl-5 overflow-hidden"
+                :class="showFull ? 'max-h-screen mb-5' : 'max-h-[360px] md:max-h-[320px]'">
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+              </ul>
+
+
+              <!-- Gradient & Button (faqat height yetarlicha katta bo‘lsa ko‘rinadi) -->
+              <template x-if="contentTallEnough">
+                <div class="relative">
+                  <!-- Gradient -->
+                  <div
+                    class="absolute top-0 left-0 -translate-y-full gradient w-full h-6 transition-opacity duration-300"
+                    :class="showFull ? 'hidden' : 'block'"></div>
+
+                  <!-- Toggle Button -->
+                  <button class="text-primary mt-2" @click="showFull = !showFull">
+                    <span x-text="showFull ? 'Скрыть' : 'Показать всё'"></span>
+                  </button>
+                </div>
+              </template>
+            </div>
+
+          </div>
+        </div>
+        <!-- 3 -->
+        <div>
+          <h4 class="uppercase md:text-2xl mb-3.75 lg:mb-7">
+            TireScan – технология диагностики протектора шин
+          </h4>
+
+          <div class="flex max-xl:flex-col gap-x-8 gap-y-4">
+            <!-- Left -->
+            <div class="md:max-w-90.75 w-full h-85 group overflow-hidden">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/car-wheel-3.png" alt="Img">
+            </div>
+
+            <!-- Right -->
+            <div x-data="{
+              showFull: false,
+              listEl: null,
+              contentTallEnough: false,
+              init() {
+                this.checkHeight();
+                window.addEventListener('resize', () => this.checkHeight());
+              },
+              checkHeight() {
+                const maxHeight = window.innerWidth < 768 ? 360 : 320;
+                this.$nextTick(() => {
+                  this.contentTallEnough = this.listEl.scrollHeight > maxHeight;
+                });
+              }
+            }" x-init="init">
+              <!-- UL -->
+              <ul x-ref="listEl" x-bind="listEl = $refs.listEl"
+                class="max-md:text-sm font-light list-disc pl-5 overflow-hidden"
+                :class="showFull ? 'max-h-screen mb-5' : 'max-h-[360px] md:max-h-[320px]'">
+
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+              </ul>
+
+
+              <!-- Gradient & Button (faqat height yetarlicha katta bo‘lsa ko‘rinadi) -->
+              <template x-if="contentTallEnough">
+                <div class="relative">
+                  <!-- Gradient -->
+                  <div
+                    class="absolute top-0 left-0 -translate-y-full gradient w-full h-6 transition-opacity duration-300"
+                    :class="showFull ? 'hidden' : 'block'"></div>
+
+                  <!-- Toggle Button -->
+                  <button class="text-primary mt-2" @click="showFull = !showFull">
+                    <span x-text="showFull ? 'Скрыть' : 'Показать всё'"></span>
+                  </button>
+                </div>
+              </template>
+            </div>
+
+          </div>
+        </div>
+        <!-- 4 -->
+        <div>
+          <h4 class="uppercase md:text-2xl mb-3.75 lg:mb-7">
+            Быстрая установка колеса – запатентованный
+            пневмозажим
+          </h4>
+
+          <div class="flex max-xl:flex-col gap-x-8 gap-y-4">
+            <!-- Left -->
+            <div class="md:max-w-90.75 w-full h-85 group overflow-hidden">
+              <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+                src="./assets/images/product/car-wheel-4.png" alt="Img">
+            </div>
+
+            <!-- Right -->
+            <div x-data="{
+              showFull: false,
+              listEl: null,
+              contentTallEnough: false,
+              init() {
+                this.checkHeight();
+                window.addEventListener('resize', () => this.checkHeight());
+              },
+              checkHeight() {
+                const maxHeight = window.innerWidth < 768 ? 360 : 320;
+                this.$nextTick(() => {
+                  this.contentTallEnough = this.listEl.scrollHeight > maxHeight;
+                });
+              }
+            }" x-init="init">
+              <!-- UL -->
+              <ul x-ref="listEl" x-bind="listEl = $refs.listEl"
+                class="max-md:text-sm font-light list-disc pl-5 overflow-hidden"
+                :class="showFull ? 'max-h-screen mb-5' : 'max-h-[360px] md:max-h-[320px]'">
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+                <li class="text-secondary">
+                  Экономия грузов при балансировки каждого
+                  колеса. Количество используемых грузов
+                  сокращается до 40%!
+                </li>
+                <li class="text-secondary">
+                  100 % охват автомобильных колес.
+                  Работает и на штампованных и на литых
+                  дисках.
+                </li>
+                <li class="text-secondary">
+                  Качественная балансировка колес,
+                  комфортное вождение и отсутствие
+                  вибраций, связанных с дисбалансом
+                  колеса.
+                </li>
+                <li class="text-secondary">
+                  Выше производительность станка.
+                  Выше скорость работы. Выше прибыль в
+                  сезон!
+                </li>
+              </ul>
+
+
+              <!-- Gradient & Button (faqat height yetarlicha katta bo‘lsa ko‘rinadi) -->
+              <template x-if="contentTallEnough">
+                <div class="relative">
+                  <!-- Gradient -->
+                  <div
+                    class="absolute top-0 left-0 -translate-y-full gradient w-full h-6 transition-opacity duration-300"
+                    :class="showFull ? 'hidden' : 'block'"></div>
+
+                  <!-- Toggle Button -->
+                  <button class="text-primary mt-2" @click="showFull = !showFull">
+                    <span x-text="showFull ? 'Скрыть' : 'Показать всё'"></span>
+                  </button>
+                </div>
+              </template>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHARACTERISTICS -->
+    <section id="characteristics" class="mb-7.5 lg:mb-12.5">
+      <div class="text-center mb-5 p-5">
+        <h2 class="uppercase font-medium text-xl lg:text-[2rem] text-center">ХАРАКТЕРИСТИКИ</h2>
+      </div>
+
+      <div class="bg-brand-gray py-7 md:pt-12.5 md:pb-10">
+        <div class="container-base flex max-md:flex-col items-center gap-4 lg:gap-10 xl:gap-15">
+          <!-- left -->
+          <div class="w-full max-w-200">
+            <h3 class="uppercase text-2xl font-medium mb-5">
+              Параметры
+            </h3>
+
+            <div>
+              <!-- 1 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. ширина диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    900
+                  </p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. масса колеса, кг
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    70
+                  </p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Точность, г
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    1
+                  </p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Диаметр вала, мм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    40
+                  </p>
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Дисплей
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    Сенсорный 23,8"
+                  </p>
+                </div>
+              </div>
+              <!-- 7 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Зажим колеса на валу
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    PneumoClamp
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="border-b grid grid-cols-2 gap-3 py-2">
+                <div>
+                  <p class="font-light">
+                    Макс. диаметр диска, дюйм
+                  </p>
+                </div>
+                <div>
+                  <p class="font-light">
+                    28
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cursor-pointer group flex items-center justify-center max-w-153.25 w-full aspect-square">
+            <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+              src="./assets/images/product/character.png" alt="Img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical documentation -->
+    <section id="technical-documentation" class="w-full container-base mb-7.5 lg:mb-12.5">
+      <div class="text-center mb-5 lg:mb-8">
+        <h2 class="uppercase font-medium text-xl lg:text-[2rem] text-center">
+          Техническая документация
+        </h2>
+      </div>
+
+      <div class="js-show-more-container">
+        <!-- Kontent qismi -->
+        <div
+          class="download-pdf overflow-hidden download-pdf flex max-lg:flex-col justify-between gap-8 transition-all duration-300"
+          data-content>
+          <!-- Left -->
+          <div class="space-y-5">
+            <h3 class="text-lg md:text-2xl uppercase">
+              документация
+            </h3>
+            <a href="/files/catalog.pdf" download
+              class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+              <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                  fill="currentColor" />
+                <path
+                  d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                  fill="currentColor" />
+                <path
+                  d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                  fill="currentColor" />
+                <path
+                  d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                  fill="currentColor" />
+              </svg>
+              <span class="w-full max-w-50">
+                Рекламная брошюра
+              </span>
+            </a>
+            <a href="/files/catalog.pdf" download
+              class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+              <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                  fill="currentColor" />
+                <path
+                  d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                  fill="currentColor" />
+                <path
+                  d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                  fill="currentColor" />
+                <path
+                  d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                  fill="currentColor" />
+              </svg>
+              <span class="w-full max-w-50">
+                Рекламная брошюра
+              </span>
+            </a>
+            <a href="/files/catalog.pdf" download
+              class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+              <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                  fill="currentColor" />
+                <path
+                  d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                  fill="currentColor" />
+                <path
+                  d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                  fill="currentColor" />
+                <path
+                  d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                  fill="currentColor" />
+                <path
+                  d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                  fill="currentColor" />
+              </svg>
+              <span class="w-full">
+                Руководство по эксплуатации
+              </span>
+            </a>
+          </div>
+          <div class="max-w-280.75 w-full grid lg:grid-cols-2 gap-y-5 gap-x-10 xl:gap-x-20">
+            <div class="space-y-5">
+              <h3 class="text-lg md:text-2xl uppercase">
+                Каталоги запчастей
+              </h3>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-12-2023_01-03-2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-12-
+                  2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-05-
+                  2024_01-12-2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-12-2023_01-03-2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-12-
+                  2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-05-
+                  2024_01-12-2024.pdf
+                </span>
+              </a>
+            </div>
+            <div class="space-y-5">
+              <h3 class="text-lg md:text-2xl uppercase opacity-0 max-lg:hidden">
+                Каталоги запчастей
+              </h3>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-12-2023_01-03-2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-12-
+                  2024.pdf
+                </span>
+              </a>
+              <a href="/files/catalog.pdf" download
+                class="text-left flex items-center gap-5 transition duration-200 hover:text-primary">
+                <svg class="shrink-0" width="19" height="24" viewBox="0 0 19 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.874 0C13.0764 4.27939e-05 13.2743 0.0831624 13.417 0.227539L13.7324 0.546875L17.8594 4.72363L18.1748 5.04297C18.3621 5.23249 18.4004 5.4668 18.4004 5.78418V23.1729C18.4001 23.519 18.0555 23.8566 17.6484 23.9629C17.628 23.9683 17.6082 23.9763 17.5869 23.9805C17.5232 23.9933 17.4579 24 17.3926 24H1.00684C0.941501 24 0.876203 23.9933 0.8125 23.9805C0.791497 23.9763 0.772152 23.9682 0.751953 23.9629C0.344872 23.8566 0.000290496 23.519 0 23.1729V1.21094C0 0.379361 0.521966 0.000134169 1.00684 0H12.874ZM0.817383 16.9658V22.9805C0.817383 23.0565 0.862104 23.1217 0.925781 23.1523C0.951465 23.1618 0.977907 23.1728 1.00684 23.1729H17.3926C17.4215 23.1729 17.448 23.1618 17.4736 23.1523C17.5374 23.1213 17.582 23.0566 17.582 22.9805V16.9658H0.817383ZM1.00684 0.827148C0.831257 0.827434 0.817383 1.12119 0.817383 1.21094V16.1377H17.582V5.76953C17.5305 5.78319 17.4771 5.79297 17.4219 5.79297H12.6758V0.989258C12.6758 0.933439 12.6857 0.879249 12.6992 0.827148H1.00684ZM13.4932 4.96582H16.9424L13.4932 1.47559V4.96582Z"
+                    fill="currentColor" />
+                  <path
+                    d="M6.35534 18.5143C6.21918 18.4013 6.06543 18.3161 5.89411 18.2598C5.72279 18.2031 5.54942 18.175 5.37441 18.175H4.18945V22.3444H4.86044V20.8394H5.35806C5.57395 20.8394 5.77185 20.8075 5.95054 20.7434C6.12922 20.6793 6.28215 20.5886 6.4089 20.472C6.53566 20.3553 6.6342 20.2109 6.70535 20.0391C6.77608 19.8674 6.81166 19.6762 6.81166 19.4648C6.81166 19.2649 6.76954 19.0849 6.68572 18.9244C6.6019 18.7638 6.4915 18.6277 6.35534 18.5143ZM6.10101 19.8918C6.05971 20.0069 6.00615 20.0962 5.93909 20.1604C5.87203 20.2245 5.79843 20.2708 5.71829 20.299C5.63815 20.3271 5.55678 20.3416 5.475 20.3416H4.86003V18.6897H5.36296C5.53429 18.6897 5.67208 18.7171 5.77676 18.7717C5.88103 18.8263 5.96199 18.8942 6.02005 18.9753C6.0777 19.0564 6.11573 19.1412 6.13454 19.2297C6.15294 19.3183 6.16234 19.3965 6.16234 19.4644C6.16234 19.6344 6.1419 19.7768 6.10101 19.8918Z"
+                    fill="currentColor" />
+                  <path
+                    d="M10.4067 18.7857C10.2334 18.6012 10.0154 18.4526 9.7525 18.3417C9.48959 18.2308 9.18496 18.175 8.83863 18.175H7.59766V22.3444H9.15716C9.20909 22.3444 9.28923 22.3377 9.39759 22.3245C9.50553 22.3113 9.62493 22.2815 9.75536 22.2339C9.8858 22.1867 10.0207 22.116 10.1606 22.0216C10.3004 21.9273 10.4259 21.7982 10.538 21.6339C10.65 21.4696 10.742 21.266 10.8148 21.0227C10.8876 20.7794 10.924 20.486 10.924 20.143C10.924 19.8939 10.881 19.6514 10.7956 19.416C10.7093 19.1809 10.5801 18.9707 10.4067 18.7857ZM9.91769 21.4051C9.71652 21.6993 9.38859 21.8462 8.93391 21.8462H8.26864V18.6893H8.65995C8.98052 18.6893 9.24139 18.732 9.44256 18.8168C9.64374 18.9016 9.8032 19.0129 9.92055 19.1507C10.0379 19.2885 10.1168 19.442 10.1581 19.6117C10.199 19.7813 10.2195 19.9531 10.2195 20.1264C10.2195 20.6846 10.1189 21.1113 9.91769 21.4051Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.8984 22.3444H12.5805V20.4662H14.3023V20.0023H12.5805V18.6897H14.4753V18.175H11.8984V22.3444Z"
+                    fill="currentColor" />
+                  <path
+                    d="M13.0548 9.50465C12.6791 9.50465 12.2178 9.5543 11.6818 9.65279C10.9335 8.8492 10.1525 7.67568 9.60134 6.52368C10.148 4.19444 9.87448 3.86465 9.75386 3.70906C9.62547 3.54355 9.44433 3.27499 9.23825 3.27499C9.15198 3.27499 8.91645 3.31472 8.82282 3.34617C8.5873 3.42561 8.46054 3.60934 8.35914 3.84892C8.07006 4.53292 8.46668 5.69899 8.87475 6.59775C8.52597 8.00175 7.94085 9.68217 7.32588 11.046C5.77619 11.7644 4.9531 12.4699 4.87868 13.1431C4.85169 13.3881 4.90894 13.7477 5.33459 14.0709C5.45112 14.159 5.58769 14.2058 5.72998 14.2058C6.08776 14.2058 6.44922 13.9285 6.86751 13.3339C7.17254 12.9002 7.50006 12.3089 7.8419 11.5749C8.9369 11.0903 10.2915 10.6525 11.4516 10.4071C12.0976 11.0349 12.6762 11.3526 13.1734 11.3526C13.5398 11.3526 13.8538 11.1822 14.0811 10.8598C14.3179 10.5242 14.3718 10.2238 14.2406 9.96603C14.0832 9.6561 13.6951 9.50465 13.0548 9.50465ZM5.73898 13.5073C5.54762 13.3587 5.55866 13.2586 5.56275 13.2209C5.5881 12.9909 5.94424 12.5824 6.81804 12.0855C6.15564 13.3235 5.7999 13.4878 5.73898 13.5073ZM9.09187 4.0223C9.10945 4.01651 9.51916 4.47789 9.13112 5.35306C8.54805 4.74934 9.0518 4.03596 9.09187 4.0223ZM8.2467 10.6538C8.66172 9.65279 9.04771 8.54755 9.34006 7.52382C9.79925 8.35886 10.3508 9.16906 10.9028 9.81789C10.0303 10.0252 9.10127 10.3178 8.2467 10.6538ZM13.5218 10.4555C13.3958 10.6339 13.1227 10.638 13.027 10.638C12.8091 10.638 12.7277 10.5069 12.3945 10.2474C12.6692 10.2118 12.9285 10.2027 13.135 10.2027C13.4985 10.2027 13.5651 10.2569 13.6154 10.2842C13.6064 10.3136 13.5827 10.3691 13.5218 10.4555Z"
+                    fill="currentColor" />
+                </svg>
+                <span class="w-full">
+                  Каталог запчастей Stellar (p) Laser (СБМП60-3D PRO) 01-05-
+                  2024_01-12-2024.pdf
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tugma va gradient qismi -->
+        <div class="relative" data-toggle-wrapper style="display: none;">
+          <div class="absolute top-0 left-0 w-full h-6 lg:h-10 gradient -translate-y-full" data-gradient></div>
+
+          <button class="text-primary block w-max mt-2 mx-auto" data-toggle-button>
+            <span>Показать всё</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- video -->
+    <section id="video review" class="mb-7.5 lg:mb-12.5 px-5">
+      <div class="text-center mb-5 lg:mb-8">
+        <h2 class="uppercase font-medium text-xl lg:text-[2rem] text-center">
+          видеообзор
+        </h2>
+      </div>
+
+
+      <div class="space-y-5 lg:space-y-10 xl:space-y-17">
+        <div class="w-full max-w-295 mx-auto">
+          <div class="aspect-[1180/689] rounded-lg overflow-hidden">
+            <iframe class="size-full object-cover" src="https://www.youtube.com/embed/TWCg1MHkCsc?si=-v5nM9-FYK9AK6Ba"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="w-full max-w-295 mx-auto">
+          <div class="aspect-[1180/689] rounded-lg overflow-hidden">
+            <iframe class="size-full object-cover" src="https://www.youtube.com/embed/hcStrRQx1iU?si=hgiW7riKV8xEGNmP"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- комплектация -->
+    <section id="completation" class="md:pt-10 pt-3 pb-13.75 md:pb-7">
+      <div class="w-full">
+        <h2 class="font-medium text-2xl md:text-5xl text-center mb-5 md:mb-12.5">
+          комплектация
+        </h2>
+
+        <div class="max-w-305 px-5 mx-auto grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <a href="#"
+            class="group bg-white rounded-lg transition duration-200 border border-transparent hover:border-gray-300 block pb-5">
+            <div class="mb-4 rounded-lg bg-brand-gray overflow-hidden flex items-center justify-center h-64">
+              <img src="./assets/images/product/completation-1.png" alt="catalog img"
+                class="object-cover transition-transform group-hover:scale-110" />
+            </div>
+            <h3
+              class="font-normal text-sm md:text-xl text-center px-5 transition-all duration-300 group-hover:text-primary">
+              Три конуса Sivik Armor
+            </h3>
+          </a>
+          <a href="#"
+            class="group bg-white rounded-lg transition duration-200 border border-transparent hover:border-gray-300 block pb-5">
+            <div class="mb-4 rounded-lg bg-brand-gray overflow-hidden flex items-center justify-center h-64">
+              <img src="./assets/images/product/completation-2.png" alt="catalog img"
+                class="object-cover transition-transform group-hover:scale-110" />
+            </div>
+            <h3
+              class="font-normal text-sm md:text-xl text-center px-5 transition-all duration-300 group-hover:text-primary">
+              Клещи
+            </h3>
+          </a>
+          <a href="#"
+            class="group bg-white rounded-lg transition duration-200 border border-transparent hover:border-gray-300 block pb-5">
+            <div class="mb-4 rounded-lg bg-brand-gray overflow-hidden flex items-center justify-center h-64">
+              <img src="./assets/images/product/completation-3.png" alt="catalog img"
+                class="object-cover transition-transform group-hover:scale-110" />
+            </div>
+            <h3
+              class="font-normal text-sm md:text-xl text-center px-5 transition-all duration-300 group-hover:text-primary">
+              Прижимная втулка с
+              кольцом и чашкой
+            </h3>
+          </a>
+          <a href="#"
+            class="group bg-white rounded-lg transition duration-200 border border-transparent hover:border-gray-300 block pb-5">
+            <div class="mb-4 rounded-lg bg-brand-gray overflow-hidden flex items-center justify-center h-64">
+              <img src="./assets/images/product/completation-4.png" alt="catalog img"
+                class="object-cover transition-transform group-hover:scale-110" />
+            </div>
+            <h3
+              class="font-normal text-sm md:text-xl text-center px-5 lg:px-10 transition-all duration-300 group-hover:text-primary">
+              SAR-015 Чашка
+              прижимная для
+              быстросъемной гайки
+            </h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- С этим товаром покупают -->
+    <section id="completation" class="md:pt-10 pt-3 pb-13.75 md:pb-7">
+      <div class="max-w-305 px-5 mx-auto w-full">
+        <h2 class="font-medium text-2xl md:text-5xl text-center mb-5 md:mb-12.5">
+          С этим товаром покупают
+        </h2>
+
+        <div class="grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <!-- Item -->
+          <div
+            class="group border flex flex-col items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white">
+            <!-- Image -->
+            <a href="#"
+              class="w-full overflow-hidden rounded shrink-0 bg-brand-gray flex items-center justify-center h-64">
+              <img src="./assets/images/product/customer-1.png" alt="Customer Img"
+                class="object-cover transition duration-200 group-hover:scale-105">
+            </a>
+
+            <div class="w-full text-center flex flex-col gap-3 py-3.75 px-3 lg:px-5">
+              <!-- Product title -->
+              <a href="#"
+                class="w-full h-max text-sm lg:text-xl font-light transition duration-200 hover:text-primary text-center">
+                Набор двухсторонних
+                конусов PROFESSIONAL
+                КС-232
+              </a>
+              <p class="text-sm lg:text-xl xl:text-2xl">
+                34 000 ₽
+              </p>
+
+              <!-- Add to cart button -->
+              <button
+                class="w-full xs:w-max mx-auto px-4 md:p-7 lg:px-10 py-2 md:py-3 uppercase font-medium bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white hidden group-hover:block mt-3">
+                В корзину
+              </button>
+            </div>
+          </div>
+          <!-- Item -->
+          <div
+            class="group border flex flex-col items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white">
+            <!-- Image -->
+            <a href="#"
+              class="w-full overflow-hidden rounded shrink-0 bg-brand-gray flex items-center justify-center h-64">
+              <img src="./assets/images/product/customer-1.png" alt="Customer Img"
+                class="object-cover transition duration-200 group-hover:scale-105">
+            </a>
+
+            <div class="w-full text-center flex flex-col gap-3 py-3.75 px-3 lg:px-5">
+              <!-- Product title -->
+              <a href="#"
+                class="w-full h-max text-sm lg:text-xl font-light transition duration-200 hover:text-primary text-center">
+                Набор двухсторонних
+                конусов PROFESSIONAL
+                КС-232
+              </a>
+              <p class="text-sm lg:text-xl xl:text-2xl">
+                34 000 ₽
+              </p>
+
+              <!-- Add to cart button -->
+              <button
+                class="w-full xs:w-max mx-auto px-4 md:p-7 lg:px-10 py-2 md:py-3 uppercase font-medium bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white hidden group-hover:block mt-3">
+                В корзину
+              </button>
+            </div>
+          </div>
+          <!-- Item -->
+          <div
+            class="group border flex flex-col items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white">
+            <!-- Image -->
+            <a href="#"
+              class="w-full overflow-hidden rounded shrink-0 bg-brand-gray flex items-center justify-center h-64">
+              <img src="./assets/images/product/customer-1.png" alt="Customer Img"
+                class="object-cover transition duration-200 group-hover:scale-105">
+            </a>
+
+            <div class="w-full text-center flex flex-col gap-3 py-3.75 px-3 lg:px-5">
+              <!-- Product title -->
+              <a href="#"
+                class="w-full h-max text-sm lg:text-xl font-light transition duration-200 hover:text-primary text-center">
+                Набор двухсторонних
+                конусов PROFESSIONAL
+                КС-232
+              </a>
+              <p class="text-sm lg:text-xl xl:text-2xl">
+                34 000 ₽
+              </p>
+
+              <!-- Add to cart button -->
+              <button
+                class="w-full xs:w-max mx-auto px-4 md:p-7 lg:px-10 py-2 md:py-3 uppercase font-medium bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white hidden group-hover:block mt-3">
+                В корзину
+              </button>
+            </div>
+          </div>
+          <!-- Item -->
+          <div
+            class="group border flex flex-col items-center lg:gap-x-7 border-transparent hover:border-brand-gray rounded transition bg-white">
+            <!-- Image -->
+            <a href="#"
+              class="w-full overflow-hidden rounded shrink-0 bg-brand-gray flex items-center justify-center h-64">
+              <img src="./assets/images/product/customer-1.png" alt="Customer Img"
+                class="object-cover transition duration-200 group-hover:scale-105">
+            </a>
+
+            <div class="w-full text-center flex flex-col gap-3 py-3.75 px-3 lg:px-5">
+              <!-- Product title -->
+              <a href="#"
+                class="w-full h-max text-sm lg:text-xl font-light transition duration-200 hover:text-primary text-center">
+                Набор двухсторонних
+                конусов PROFESSIONAL
+                КС-232
+              </a>
+              <p class="text-sm lg:text-xl xl:text-2xl">
+                34 000 ₽
+              </p>
+
+              <!-- Add to cart button -->
+              <button
+                class="w-full xs:w-max mx-auto px-4 md:p-7 lg:px-10 py-2 md:py-3 uppercase font-medium bg-transparent border border-primary text-primary rounded justify-center items-center transition duration-200 hover:bg-primary hover:text-white hidden group-hover:block mt-3">
+                В корзину
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    let swiper = new Swiper(".productSwiper", {
+      spaceBetween: 20,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 1.5,
+        },
+        768: {
+          slidesPerView: 2.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+        },
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const containers = document.querySelectorAll(".js-show-more-container");
+
+      containers.forEach((container) => {
+        const content = container.querySelector("[data-content]");
+        const toggleWrapper = container.querySelector("[data-toggle-wrapper]");
+        const toggleButton = container.querySelector("[data-toggle-button]");
+        const gradient = container.querySelector("[data-gradient]");
+
+        let expanded = false;
+
+        function getMaxHeight() {
+          return window.innerWidth >= 1024 ? 250 : 350;
+        }
+
+        function checkOverflow() {
+          const maxHeight = getMaxHeight();
+          content.style.maxHeight = expanded ? "none" : maxHeight + "px";
+          toggleWrapper.style.display = content.scrollHeight > maxHeight ? "block" : "none";
+          gradient.style.display = expanded ? "none" : "block";
+        }
+
+        toggleButton.addEventListener("click", function () {
+          expanded = !expanded;
+          if (expanded) {
+            content.style.maxHeight = "none";
+            toggleButton.querySelector("span").textContent = "Скрыть";
+            gradient.style.display = "none";
+          } else {
+            content.style.maxHeight = getMaxHeight() + "px";
+            toggleButton.querySelector("span").textContent = "Показать всё";
+            gradient.style.display = "block";
+          }
+        });
+
+        // Boshlang‘ich sozlash
+        content.style.transition = "max-height 0.3s ease";
+        content.style.maxHeight = getMaxHeight() + "px";
+        checkOverflow();
+
+        // Responsivlik uchun qayta tekshirish
+        window.addEventListener("resize", checkOverflow);
+      });
+    });
+  </script>
+
+
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -41,6 +41,12 @@
   @apply transition duration-200 hover:opacity-75;
 }
 
+
+.gradient {
+  background: linear-gradient(180deg, var(--color-white-40, rgba(255, 255, 255, 0.40)) 0%, var(--color-white-solid, #FFF) 100%);
+}
+
+
 .custom-scroll {
   overflow-y: auto; /* scroll vertikal bo'lishi uchun */
   scrollbar-width: thin; /* Firefox uchun nozik scrollbar */
