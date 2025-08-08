@@ -325,6 +325,12 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .col-span-6 {
+    grid-column: span 6 / span 6;
+  }
   .container {
     width: 100%;
     @media (width >= 576px) {
@@ -831,6 +837,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -1860,6 +1869,11 @@
       aspect-ratio: var(--aspect-video);
     }
   }
+  .max-md\:h-50 {
+    @media (width < 48rem) {
+      height: calc(var(--spacing) * 50);
+    }
+  }
   .max-md\:\!max-h-145 {
     @media (width < 48rem) {
       max-height: calc(var(--spacing) * 145) !important;
@@ -1944,6 +1958,21 @@
   .md\:col-span-1 {
     @media (width >= 48rem) {
       grid-column: span 1 / span 1;
+    }
+  }
+  .md\:col-span-2 {
+    @media (width >= 48rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .md\:col-span-4 {
+    @media (width >= 48rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .md\:col-end-2 {
+    @media (width >= 48rem) {
+      grid-column-end: 2;
     }
   }
   .md\:mb-3\.5 {
@@ -2102,6 +2131,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-6 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
   .md\:flex-row {
