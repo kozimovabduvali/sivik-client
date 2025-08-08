@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>балансировочные</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- Map -->
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+
+      .ink {
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 100%;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        z-index: 20;
+      }
+
+      .animate {
+        -webkit-animation: ripple 2s linear infinite;
+        -moz-animation: ripple 2s linear infinite;
+        -ms-animation: ripple 2s linear infinite;
+        -o-animation: ripple 2s linear infinite;
+        animation: ripple 2s linear infinite;
+      }
+
+      @keyframes ripple {
+        20% {
+          opacity: 0;
+          transform: scale(2.5);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(2.5);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pt-7">
+      <main class="overflow-x-hidden">
+        <!-- Hero -->
+        <section>
+          <div class="bg-brand-gray">
+            <div class="max-md:!-mx-5 swiper sivik-hero__swiper !container-base !overflow-visible">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="grid md:grid-cols-2">
+                    <!-- left -->
+                    <div class="order-last md:order-none overflow-hidden">
+                      <img
+                      class="max-h-50 md:max-h-100 xl:max-h-145 mx-auto"
+                        src="https://sivik.ru/upload/iblock/489/96pfwl6f0r2w95932x78z34qk0wnt44r.png"
+                        alt="Car img"
+                      />
+                    </div>
+                    <!-- rigt -->
+                    <div
+                      class="relative max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5"
+                    >
+                      <div class="mx-auto md:absolute top-0 right-0 -translate-y-40 md:-translate-y-1/2 size-55 flex items-end justify-center rounded-full bg-primary overflow-hidden p-7">
+                        <p class="font-bold text-lg text-white xl:text-[1.6875rem]">
+                          Новинка
+                        </p>
+                      </div>
+
+                      <h3
+                        class="uppercase mb-3.75 font-bold text-4xl xl:text-7xl"
+                      >
+                        GREEN WEIGHT 2.0
+                      </h3>
+                      <p class="text-2xl mb-2">
+                        Подкатной гидравлический домкрат
+                      </p>
+                      <button
+                        class="w-max py-3 px-5 lg:px-8 lg:text-xl font-medium text-primary bg-transparent border border-primary rounded-md transition-all uppercase hover:bg-primary hover:text-white duration-300"
+                      >
+                          Выбрать подъемник
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grid md:grid-cols-2">
+                    <!-- left -->
+                    <div class="order-last md:order-none overflow-hidden">
+                      <img
+                      class="max-h-50 md:max-h-100 xl:max-h-145 mx-auto"
+                        src="https://sivik.ru/upload/iblock/143/ft8qor9g4jxprmk11hqo1zjsfivd85bd.png"
+                        alt="Car img"
+                      />
+                    </div>
+                    <!-- rigt -->
+                    <div
+                      class="relative max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5"
+                    >
+
+                      <h3
+                        class="uppercase mb-3.75 font-bold text-4xl xl:text-7xl"
+                      >
+                        ТР 532 
+                      </h3>
+                      <p class="text-2xl mb-2">
+                        Траверса пневмогидравлическая (ямная)
+                      </p>
+
+                      <ul class="list-disc ml-5 text-primary">
+                        <li>
+                          <p class="md:text-lg text-secondary">
+                            Грузоподъемность 3,6 т
+                          </p>
+                        </li>
+                        <li>
+                          <p class="md:text-lg text-secondary">
+                            Низкопрофильный
+                          </p>
+                        </li>
+                        <li>
+                          <p class="md:text-lg text-secondary">
+                            Минимальная высота подхвата - 75 мм
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grid md:grid-cols-2">
+                    <!-- left -->
+                    <div class="order-last md:order-none overflow-hidden">
+                      <img
+                      class="max-h-50 md:max-h-100 xl:max-h-145 mx-auto"
+                        src="https://sivik.ru/upload/iblock/350/e2cmt186cyf7mugxu5bsrpjtzkeiersk.png"
+                        alt="Car img"
+                      />
+                    </div>
+                    <!-- rigt -->
+                    <div
+                      class="relative max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5"
+                    >
+                      <div class="mx-auto md:absolute top-0 right-0 -translate-y-40 md:-translate-y-1/2 size-55 flex items-end justify-center rounded-full bg-primary overflow-hidden p-7">
+                        <p class="font-bold text-lg text-white xl:text-[1.6875rem]">
+                          Новинка
+                        </p>
+                      </div>
+
+                      <h3
+                        class="uppercase mb-3.75 font-bold text-4xl xl:text-7xl"
+                      >
+                        GREEN WEIGHT 2.0
+                      </h3>
+                      <p class="text-2xl mb-2">
+                        Подкатной гидравлический домкрат
+                      </p>
+                      <ul class="list-disc ml-5 text-primary mb-2">
+                        <li>
+                          <p class="md:text-lg text-secondary">
+                            Грузоподъемность 3,6 т
+                          </p>
+                        </li>
+                        <li>
+                          <p class="md:text-lg text-secondary">
+                            Низкопрофильный
+                          </p>
+                        </li>
+                        <li>
+                          <p class="md:text-lg text-secondary">
+                            Минимальная высота подхвата - 75 мм
+                          </p>
+                        </li>
+                      </ul>
+                      <button
+                        class="w-max py-3 px-5 lg:px-8 lg:text-xl font-medium text-primary bg-transparent border border-primary rounded-md transition-all uppercase hover:bg-primary hover:text-white duration-300"
+                      >
+                          Выбрать подъемник
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="max-lg:!hidden swiper-button-next"></div>
+              <div class="max-lg:!hidden swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Каталог -->
+        <section class="container-base pt-7.5">
+          <h2
+            class="mb-4 font-medium text-center text-2xl uppercase md:mb-7 md:text-4xl lg:text-[2.75rem]/13.75"
+          >
+            Каталог
+          </h2>
+
+          <!-- Grid -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-10 xl:grid-rows-11 xl:h-200"
+          >
+            <div
+              class="flex flex-col space-y-4 pt-12.5 pb-4 bg-brand-gray col-span-2 md:col-span-1 xl:col-span-3 xl:row-span-7"
+            >
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                  >Балансировочные станки</span
+                >
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Шиномонтажное оборудование
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Станки для правки дисков (Дископравы)
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Автомобильные подъемники
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Стенды сход-развала
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Оборудование для замены технических жидкостей
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Гаражное оборудование
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Комплекты оборудования
+                </span>
+              </a>
+              <a
+                class="block px-5 relative group md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <span
+                  class="transition duration-200 group-hover:font-medium group-hover:text-primary"
+                >
+                  Запасные части
+                </span>
+              </a>
+
+              <a
+                class="flex px-5 mt-5 items-center gap-2 relative group transition duration-200 hover:opacity-75 md:px-7.5 xl:px-12.5"
+                href="#"
+              >
+                <svg
+                  width="30"
+                  height="31"
+                  viewBox="0 0 30 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.25 19.25V24.25C26.25 24.913 25.9866 25.5489 25.5178 26.0178C25.0489 26.4866 24.413 26.75 23.75 26.75H6.25C5.58696 26.75 4.95107 26.4866 4.48223 26.0178C4.01339 25.5489 3.75 24.913 3.75 24.25V19.25"
+                    stroke="#0749CA"
+                    stroke-width="1.875"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.75 13L15 19.25L21.25 13"
+                    stroke="#0749CA"
+                    stroke-width="1.875"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 19.25V4.25"
+                    stroke="#0749CA"
+                    stroke-width="1.875"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span class="text-primary">Скачать каталог (pdf)</span>
+              </a>
+            </div>
+            <!-- 2 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase relative group md:aspect-auto xl:col-span-2 xl:row-span-5"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/home/catalog-1.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Дископравное оборудование
+                </span>
+              </div>
+            </a>
+            <!-- 3 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase relative group md:aspect-auto xl:col-span-2 xl:row-span-7"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/catalog/Background-3.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Автоподъёмное оборудование
+                </span>
+              </div>
+            </a>
+            <!-- 4 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase relative group md:aspect-auto xl:col-span-3 xl:row-span-7"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/home/catalog-2.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Балансировочное оборудование
+                </span>
+              </div>
+            </a>
+            <!-- 5 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase relative group md:aspect-auto xl:col-span-2 xl:row-span-6"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/catalog/Background-5.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Балансировочное оборудование
+                </span>
+              </div>
+            </a>
+            <!-- 6 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase relative group md:aspect-auto xl:col-span-3 xl:row-span-6"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/home/catalog-2.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Балансировочное оборудование
+                </span>
+              </div>
+            </a>
+            <!-- 7 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase relative group md:aspect-auto xl:col-span-2 xl:row-span-5"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/home/catalog-1.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Автоподъёмное оборудование
+                </span>
+              </div>
+            </a>
+            <!-- 8 -->
+            <a
+              href="#"
+              class="block overflow-hidden bg-brand-gray aspect-video uppercase col-span-2 relative group md:aspect-auto md:col-span-1 xl:col-span-3 xl:row-span-6"
+            >
+              <img
+                class="object-cover size-full group-hover:scale-105 transition duration-200"
+                src="./assets/images/catalog/Background-4.png"
+                alt="img"
+              />
+
+              <div
+                class="flex w-full h-full p-5 text-center bg-primary/70 opacity-0 absolute top-0 left-0 items-center justify-center group-hover:opacity-100 transition duration-200"
+              >
+                <span class="text-white font-medium md:text-xl">
+                  Балансировочное оборудование
+                </span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Новости -->
+        <section class="container-base pt-7.5 md:pt-12.5">
+          <h2
+            class="mb-4 font-medium text-center text-2xl uppercase md:mb-7 md:text-4xl lg:text-[2.75rem]/13.75"
+          >
+            Новости
+          </h2>
+
+          <div class="max-md:!-mx-5 swiper sivik-main__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="md:grid md:grid-cols-2">
+                  <!-- Right -->
+                  <div class="overflow-hidden max-md:aspect-video">
+                    <img
+                      class="object-cover size-full"
+                      src="https://sivik.ru/upload/iblock/502/ywzjtdiuagfui7lfdsbdxkpikp539pgz.webp"
+                      alt="Car img"
+                    />
+                  </div>
+                  <!-- Left -->
+                  <div
+                    class="flex flex-col px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5"
+                  >
+                    <h3
+                      class="mb-3.75 font-medium text-2xl uppercase lg:text-3xl"
+                    >
+                      Снижаем цены на подъемники серии 4200!
+                    </h3>
+                    <p>Заказывайте у дилера в вашем регионе.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="md:grid md:grid-cols-2">
+                  <!-- Right -->
+                  <div class="overflow-hidden max-md:aspect-video">
+                    <img
+                      class="object-cover size-full"
+                      src="https://sivik.ru/upload/iblock/502/ywzjtdiuagfui7lfdsbdxkpikp539pgz.webp"
+                      alt="Car img"
+                    />
+                  </div>
+                  <!-- Left -->
+                  <div
+                    class="flex flex-col px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5"
+                  >
+                    <h3
+                      class="mb-3.75 font-medium text-2xl uppercase lg:text-3xl"
+                    >
+                      Снижаем цены на подъемники серии 4200!
+                    </h3>
+                    <p>Заказывайте у дилера в вашем регионе.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="max-lg:!hidden swiper-button-next"></div>
+            <div class="max-lg:!hidden swiper-button-prev"></div>
+            <div class="swiper-pagination lg:!hidden"></div>
+          </div>
+        </section>
+
+        <!-- Обратная связь -->
+        <section class="container-base pt-7.5 pb-12.5">
+          <div class="w-full max-w-235 mx-auto mb-7.5 text-center lg:mb-15">
+            <h2
+              class="mb-4 font-medium text-2xl uppercase md:text-4xl lg:text-[2.75rem]/13.75"
+            >
+              Обратная связь
+            </h2>
+            <p class="mb-7.5 text-[#3A3D43]">
+              Если у вас есть вопрос, пожелание по работе оборудования или
+              компании, вы можете написать нам. Заполните форму. Мы обязательно
+              рассмотрим и ответим вам в ближайшее рабочее время.
+            </p>
+
+            <button
+              class="w-max px-10 py-4 text-white font-medium text-xl leading-none bg-primary rounded-sm uppercase transition duration-200 hover:bg-primary/75 xl:py-5"
+            >
+              Задать вопрос
+            </button>
+          </div>
+
+          <div class="grid-cols-2 max-md:-mx-5 md:grid xl:h-125">
+            <!-- Left -->
+            <div class="px-7.5 py-10 bg-brand-gray lg:px-27.5 lg:py-16">
+              <h3
+                class="max-md:text-center mb-3.75 font-medium text-2xl uppercase lg:text-3xl xl:text-[35px]"
+              >
+                О КОМПАНИИ SIVIK
+              </h3>
+              <p class="mb-7 lg:mb-12.5">
+                НПО «Компания СИВИК» — ведущий российский производитель
+                оборудования и инструмента для автосервисов. Предприятие было
+                основано в 1993 году как небольшая фирма, ассортимент которой
+                состоял из одного рихтовочного стенда. Сегодня мы стали одним из
+                лидеров рынка, предлагая максимально широкий ассортимент
+                продукции, отвечающей строгим современным требованиям. Более 50%
+                российских СТО и шиномонтажных мастерских используют станки и
+                стенды нашего производства. Также мы поставляем продукцию в
+                почти 40 других стран мира.
+              </p>
+
+              <button
+                class="flex mx-auto py-3 px-5 text-base font-medium text-primary bg-transparent border border-primary rounded-md transition-all uppercase hover:bg-primary hover:text-white duration-300 lg:px-8"
+              >
+                О компании
+              </button>
+            </div>
+
+            <!-- Right -->
+            <div class="overflow-hidden max-md:aspect-video">
+              <img
+                class="object-cover size-full"
+                src="./assets/images/home/car.jpg"
+                alt="Car img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- вопрос-ответ -->
+        <section class="max-w-221.25 w-full mx-auto px-5">
+          <h2
+            class="mb-4 text-center font-medium text-2xl uppercase md:text-4xl lg:text-[2.75rem]/13.75"
+          >
+            вопрос-ответ
+          </h2>
+          <!-- Accordion Item -->
+          <div x-data="{ open: false }" class="border-b border-gray-300">
+            <button
+              @click="open = !open"
+              class="flex w-full py-4 text-primary text-left text-lg font-light justify-between items-center"
+            >
+              <span class="text-secondary font-medium md:text-xl">
+                Как заказать оборудование?
+              </span>
+              <svg
+                 :class="[
+                  open ? 'transform rotate-0' : '-rotate-45',
+                  'transition duration-500',
+                  'size-6'
+                ]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div x-show="open" x-collapse x-cloak class="max-md:text-sm pb-4">
+              <p>
+                Заказать оборудование СИВИК можно одним из следующих способов:
+              </p>
+              <ul class="ml-6 mt-2 space-y-1 list-decimal">
+                <li>
+                  Заказать оборудование СИВИК можно одним из следующих способов:
+                </li>
+                <li>
+                  На сайте: добавить товар в корзину, указать данные плательщика
+                  и оформить заявку.
+                </li>
+                <li>
+                  У дилера: контактная информация дилерских центров представлена
+                  на странице сайта «Где купить»
+                  <a href="#" class="text-blue-500 underline">«Где купить»</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div x-data="{ open: false }" class="border-b border-gray-300">
+            <button
+              @click="open = !open"
+              class="flex w-full py-4 text-primary text-left text-lg font-light justify-between items-center"
+            >
+              <span class="text-secondary font-medium md:text-xl">
+                Как заказать запчасти?
+              </span>
+              <svg
+                 :class="[
+                  open ? 'transform rotate-0' : '-rotate-45',
+                  'transition duration-500',
+                  'size-6'
+                ]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div x-show="open" x-collapse x-cloak class="max-md:text-sm pb-4">
+              <p>
+                Заказать оборудование СИВИК можно одним из следующих способов:
+              </p>
+              <ul class="ml-6 mt-2 space-y-1 list-decimal">
+                <li>
+                  Заказать оборудование СИВИК можно одним из следующих способов:
+                </li>
+                <li>
+                  На сайте: добавить товар в корзину, указать данные плательщика
+                  и оформить заявку.
+                </li>
+                <li>
+                  У дилера: контактная информация дилерских центров представлена
+                  на странице сайта «Где купить»
+                  <a href="#" class="text-blue-500 underline">«Где купить»</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div x-data="{ open: false }" class="border-b border-gray-300">
+            <button
+              @click="open = !open"
+              class="flex w-full py-4 text-primary text-left text-lg font-light justify-between items-center"
+            >
+              <span class="text-secondary font-medium md:text-xl">
+                Как получить помощь сервисного специалиста?
+              </span>
+              <svg
+                 :class="[
+                  open ? 'transform rotate-0' : '-rotate-45',
+                  'transition duration-500',
+                  'size-6'
+                ]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div x-show="open" x-collapse x-cloak class="max-md:text-sm pb-4">
+              <p>
+                Для получения квалифицированной сервисной поддержки позвоните по
+                единому бесплатному телефону 8-800-1000-276. Контакты ближайших
+                к вам сервисных центров указаны на странице "
+                <a class="text-primary" href="#">Сервис</a> ". Контакты
+                сервисных специалистов Компании СИВИК указаны на странице
+                "Контакты"
+              </p>
+            </div>
+          </div>
+
+          <div x-data="{ open: false }" class="border-b border-gray-300">
+            <button
+              @click="open = !open"
+              class="flex w-full py-4 text-primary text-left text-lg font-light justify-between items-center"
+            >
+              <span class="text-secondary font-medium md:text-xl">
+                Отличается ли цена производителя и цена у дилера?
+              </span>
+              <svg
+                 :class="[
+                  open ? 'transform rotate-0' : '-rotate-45',
+                  'transition duration-500',
+                  'size-6'
+                ]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <div x-show="open" x-collapse x-cloak class="max-md:text-sm pb-4">
+              <p>
+                Розничная стоимость оборудования, представленная на сайте
+                <a href="sivik.ru" class="text-primary">sivik.ru</a> , и
+                стоимость оборудования у дилеров в регионах – одинаковая.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Где купить -->
+        <section class="container-base pt-7.5">
+          <h2
+            class="mb-4 text-center font-medium text-2xl uppercase md:text-4xl lg:text-[2.75rem]/13.75"
+          >
+            Где купить
+          </h2>
+
+          <div>
+            <div
+              class="flex flex-col mb-7.5 items-center justify-center gap-5 md:flex-row"
+            >
+              <input
+                id="country"
+                type="text"
+                class="max-w-97.5 w-full px-6.25 py-4.75 text-neutral bg-brand-gray rounded-sm border border-transparent placeholder:text-neutral focus:outline-none focus:border-primary"
+                placeholder="Россия"
+                value="Россия"
+              />
+
+              <input
+                id="city"
+                type="text"
+                class="max-w-97.5 w-full px-6.25 py-4.75 text-neutral bg-brand-gray rounded-sm border border-transparent placeholder:text-neutral focus:outline-none focus:border-primary"
+                placeholder="Ташкент"
+                value="Ташкент"
+              />
+
+              <button
+                onclick="updateMap()"
+                class="w-auto px-10 py-4 font-medium text-xl text-white bg-primary rounded-sm uppercase transition duration-200 hover:bg-primary/75"
+              >
+                ПОКАЗАТЬ
+              </button>
+            </div>
+
+            <div
+              id="map"
+              class="overflow-hidden h-90 max-md:-mx-5 rounded-2xl lg:h-125"
+            ></div>
+
+            <!-- Показать все -->
+            <div
+              class="flex max-xl:flex-col max-xl:items-center pt-7.5 justify-between gap-5 md:pt-12"
+            >
+              <!-- 1 -->
+              <div class="w-full xl:w-auto">
+                <p class="mb-5 text-xl font-medium lg:mb-7.5 lg:text-[2rem]">
+                  Показать все
+                </p>
+                <button
+                  class="block overflow-hidden w-auto mx-auto px-10 py-4 whitespace-nowrap font-medium text-xl text-white bg-primary rounded-sm relative uppercase transition duration-200 hover:bg-primary/75 lg:mx-0"
+                >
+                  Оформить заявку
+
+                  <span
+                    class="ink animate"
+                    style="
+                      height: 200px;
+                      width: 250px;
+                      top: -20px;
+                      left: -140px;
+                    "
+                  ></span>
+                </button>
+              </div>
+
+              <!-- 2 -->
+              <div
+                class="flex flex-wrap max-w-261.5 w-full max-lg:flex-col justify-between gap-x-5 gap-y-2"
+              >
+                <a href="#" class="font-medium text-primary">
+                  Черников Михаил Александрович ИП
+                </a>
+                <a href="#"> + 7 707 601 0050 </a>
+                <p class="w-full md:max-w-95">
+                  г. Астана, Сарыарка район, Кенесары 6 магазин AUTOMASTER
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-13.75 pb-20 md:pt-25 md:pb-12.5">
+          <div class="container-base">
+            <h2 class="mb-5 text-sm font-medium md:mb-4 md:text-2xl">
+              5 причин приобрести оборудование «СИВИК»
+            </h2>
+            <ol class="pl-5 mb-5 list-decimal md:mb-3.5">
+              <li class="text-sm font-light md:text-base">
+                Балансировочное оборудование. Мы производим станки для
+                балансировки легковых и грузовых колес, а также дополнительные
+                аксессуары к ним (конусы, адаптеры и пр.).
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Шиномонтажное оборудование. У нас представлены автоматические,
+                полуавтоматические, грузовые станки, вспомогательные демонтажные
+                штанги, монтажные головки, адаптеры, устройства автоматической и
+                взрывной накачки, борторасширители.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Дископравное оборудование. Выпускаем стенды для правки кованых,
+                легкосплавных, штампованных дисков.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Автоподъемники. Один из самых важных видов оборудования для
+                любого автосервиса. Наша производственная линейка включает
+                двухстоечные, четырехстоечные, ножничные, пневматические,
+                подкатные подъемники.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Стенды для регулировки схода-развала. Современные системы,
+                позволяющие с максимальной точностью регулировать углы установки
+                колес.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Установки для замены технических жидкостей. В каталоге есть
+                модели для замены масла в АКПП, антифриза, тормозной жидкости, а
+                также для промывки форсунок и топливной системы.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Гаражное оборудование. Предлагаем прочные и надежные слесарные
+                верстаки с двумя или тремя тумбами, станки для проточки
+                тормозных дисков.
+              </li>
+            </ol>
+            <p class="mb-5 text-sm font-light md:mb-3.5 md:text-base">
+              Более подробно о представленном автосервисном оборудовании и
+              инструменте вы можете узнать из онлайн-каталога. Вы можете
+              запросить бесплатную консультацию по любому виду оборудования на
+              сайте, а также задать в онлайн-чате.
+            </p>
+            <h2 class="mb-5 text-sm font-medium md:mb-4 md:text-2xl">
+              Каталог оборудования и инструмента
+            </h2>
+            <ol class="pl-5 mb-5 list-decimal md:mb-3.5">
+              <li class="text-sm font-light md:text-base">
+                Современное производство. На нашем предприятии используются
+                новейшие станки с ЧПУ и роботизированные линии. Мы регулярно
+                обновляем технологический парк, внедряем инновационные методы
+                организации производственных работ.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Широкая сеть представительств. Наши авторизованные сервисные
+                центры работают в Москве и 31 регионе России. Вы можете
+                приобрести оборудование и инструмент для СТО с быстрой доставкой
+                в любую точку страны.
+              </li>
+              <li class="text-sm font-light md:text-base">
+                Безупречное качество. Продукция нашей компании отвечает ГОСТам и
+                другим стандартам, имеет подтверждающие сертификаты. Каждый этап
+                производства оборудования и инструмента для автосервиса
+                тщательно контролируется.
+              </li>
+            </ol>
+          </div>
+        </section>
+      </main>
+
+      <!-- upper link -->
+      <a
+        href="#top"
+        class="hidden z-30 w-15 h-15 bg-white rounded-sm border border-white transition-all items-center justify-center fixed left-20 bottom-12.5 duration-300 hover:border-black upper-shadow lg:flex"
+      >
+        <img src="./assets/icon/arrow.svg" alt="arrow" />
+      </a>
+
+      <!-- Accept -->
+      <div
+        class="hidden w-full mx-auto pt-9 pb-9 px-5 bg-neutral fixed bottom-0 left-1/2 -translate-x-1/2 md:pt-3.5 md:pb-8 lg:max-w-193.5 lg:rounded-sm"
+      >
+        <p
+          class="max-w-172 mx-auto mb-4 text-center text-xs font-medium text-white md:mb-6"
+        >
+          НПО Компания СИВИК использует cookie (файлы с данными о прошлых
+          посещениях сайта) для персонализации сервисов и удобства
+          пользователей. Продолжая работу на веб-сайте, Вы даете согласие на
+          обработку своих персональных данных в соответствии с Политикой
+          конфиденциальности, опубликованной на веб-сайте https://sivik.ru
+        </p>
+        <button
+          class="flex max-w-43.5 w-full mx-auto p-1 text-white font-medium text-xl rounded-sm border border-[#FFFFFF] justify-center !bg-transparent"
+        >
+          Принять
+        </button>
+      </div>
+
+      <!-- footer -->
+      <footer
+        class="pt-19 pb-5 text-[#ACACAC] text-sm font-light bg-secondary lg:pb-17.5"
+      >
+        <div
+          class="container-base flex flex-col items-center justify-between gap-8 lg:flex-row"
+        >
+          <!-- Каталог -->
+          <div class="max-lg:w-full">
+            <h3 class="mb-3.75 font-semibold text-lg">Каталог</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Балансировочные станки</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Шиномонтажное оборудование</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Станки для правки дисков (Дископравы)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Автомобильные подъемники</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Стенды сход-развала</a
+                >
+              </li>
+              <li class="lg:text-nowrap">
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Оборудование для замены технических жидкостей</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Гаражное оборудование</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-all hover:text-white duration-300"
+                  >Запасные части</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="block w-full border border-[#ACACAC] lg:hidden"></div>
+
+          <div class="w-full lg:hidden">
+            <div class="flex items-center gap-20 lg:hidden">
+              <ul class="space-y-2 mt-0 lg:mt-0">
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Где купить</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Сервис</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >О компании</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Новости</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Карта сайта</a
+                  >
+                </li>
+              </ul>
+
+              <div>
+                <ul class="space-y-2 mt-3 lg:mt-0">
+                  <li>
+                    <a
+                      href="#"
+                      class="transition-all hover:text-white duration-300"
+                      >Оплата</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="transition-all hover:text-white duration-300"
+                      >Доставка</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="transition-all hover:text-white duration-300"
+                      >Гарантия</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="transition-all hover:text-white duration-300"
+                      >Вопрос-ответ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button
+              class="flex mt-6 px-4 py-2 border border-[#ACACAC] cursor-pointer !bg-transparent rounded items-center gap-2"
+            >
+              <img src="./assets/images/footer/contaienr.svg" alt="" />
+              Подписаться на рассылку
+            </button>
+          </div>
+
+          <div class="block w-full border border-[#ACACAC] lg:hidden"></div>
+
+          <div class="flex items-start xl:mr-60">
+            <div class="hidden lg:block">
+              <ul class="space-y-2 mt-8 lg:mt-0">
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Где купить</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Сервис</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >О компании</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Новости</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Карта сайта</a
+                  >
+                </li>
+              </ul>
+              <button
+                class="flex mt-6 px-4 py-2 border border-[#ACACAC] transition-all cursor-pointer !bg-transparent hover:border-white duration-300 hover:text-white rounded items-center gap-2"
+              >
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.9126 1.40625C11.4829 1.09375 11.0011 0.9375 10.4673 0.9375C9.93343 0.9375 9.45166 1.09375 9.02197 1.40625L1.65869 6.66016C1.34619 6.88151 1.10205 7.16146 0.92627 7.5C0.750488 7.83854 0.662598 8.19661 0.662598 8.57422V17.1484C0.662598 17.7995 0.903483 18.3594 1.38525 18.8281C1.86702 19.2969 2.43994 19.5312 3.104 19.5312H17.811C18.4881 19.5312 19.0675 19.2969 19.5493 18.8281C20.0311 18.3594 20.272 17.7995 20.272 17.1484V8.57422C20.272 8.19661 20.1841 7.83854 20.0083 7.5C19.8325 7.16146 19.5884 6.88151 19.2759 6.66016L11.9126 1.40625ZM9.58838 2.16797C9.8488 1.98568 10.1418 1.89453 10.4673 1.89453C10.7928 1.89453 11.0858 1.98568 11.3462 2.16797L18.6899 7.42188C18.8853 7.5651 19.035 7.73763 19.1392 7.93945C19.2433 8.14128 19.2954 8.35286 19.2954 8.57422V17.1484C19.2954 17.5391 19.1522 17.8743 18.8657 18.1543C18.5793 18.4342 18.2277 18.5742 17.811 18.5742H3.104C2.70036 18.5742 2.35531 18.4342 2.06885 18.1543C1.78239 17.8743 1.63916 17.5391 1.63916 17.1484V8.57422C1.63916 8.35286 1.69124 8.14128 1.79541 7.93945C1.89958 7.73763 2.04932 7.5651 2.24463 7.42188L9.58838 2.16797ZM4.88135 10.5664C4.76416 10.4883 4.64046 10.459 4.51025 10.4785C4.38005 10.498 4.27588 10.5599 4.19775 10.6641C4.10661 10.7682 4.0708 10.8854 4.09033 11.0156C4.10986 11.1458 4.17822 11.25 4.29541 11.3281L9.00244 14.7656C9.43213 15.0781 9.92041 15.2344 10.4673 15.2344C11.0142 15.2344 11.5024 15.0781 11.9321 14.7656L16.6392 11.3281C16.7433 11.25 16.8052 11.1458 16.8247 11.0156C16.8442 10.8854 16.8149 10.7682 16.7368 10.6641C16.6587 10.5599 16.5513 10.498 16.4146 10.4785C16.2778 10.459 16.1574 10.4883 16.0532 10.5664L11.3462 14.0039C11.0858 14.1862 10.7928 14.2773 10.4673 14.2773C10.1418 14.2773 9.8488 14.1862 9.58838 14.0039L4.88135 10.5664Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                Подписаться на рассылку
+              </button>
+            </div>
+
+            <div class="hidden lg:block">
+              <ul class="space-y-2 mt-3 lg:mt-0">
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Оплата</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Доставка</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Гарантия</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all hover:text-white duration-300"
+                    >Вопрос-ответ</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full max-lg:mb-7 lg:w-fit">
+            <h3 class="mb-4 font-semibold text-lg">Контакты</h3>
+            <p class="mb-3.75">ООО НПО “Компания СИВИК”</p>
+            <p class="mb-3.75">Россия, г. Омск, пр. Космический, 109/2</p>
+            <p class="mb-3.75">
+              <a
+                href="tel:+73812951797"
+                class="transition-all hover:text-white duration-300"
+                >+7 (3812) 95-17-97</a
+              >
+            </p>
+            <p class="mb-3.75">
+              <a
+                href="mailto:sivik@sivik.ru"
+                class="transition-all hover:text-white duration-300"
+                >sivik@sivik.ru</a
+              >
+            </p>
+            <p class="mt-2 text-2xl font-medium">
+              <a
+                href="tel:88003503895"
+                class="transition-all hover:text-white duration-300"
+                >8 800 350 38 95</a
+              >
+            </p>
+            <div class="flex mt-4 items-center gap-3">
+              <a href="#">
+                <div
+                  class="flex w-8 h-8 text-[#ACACAC] border border-[#ACACAC] rounded-[5px] transition-all cursor-pointer hover:border-white hover:text-white duration-300 items-center justify-center"
+                >
+                  <svg
+                    width="18"
+                    height="15"
+                    viewBox="0 0 18 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.306152 7.20728L4.27588 8.67212L5.82861 13.6379C5.86768 13.804 5.96777 13.9041 6.12891 13.9382C6.29004 13.9724 6.43896 13.9358 6.57568 13.8284L8.80225 12.0266C8.8999 11.929 9.02441 11.8801 9.17578 11.8801C9.32715 11.8801 9.47119 11.929 9.60791 12.0266L13.5923 14.9124C13.729 15.01 13.8779 15.0295 14.0391 14.9709C14.2002 14.9124 14.2954 14.8 14.3247 14.634L17.2983 0.571533C17.3276 0.405518 17.2764 0.256592 17.1445 0.124756C17.0127 -0.00708008 16.8638 -0.0388184 16.6978 0.029541L0.306152 6.32837C0.101074 6.39673 -0.00146484 6.54321 -0.00146484 6.76782C-0.00146484 6.99243 0.101074 7.13892 0.306152 7.20728ZM5.62354 7.9397L13.4604 3.17896C13.519 3.14966 13.5728 3.16675 13.6216 3.23022C13.6704 3.2937 13.6606 3.34497 13.5923 3.38403L7.17627 9.34595C7.07861 9.4436 6.98828 9.56079 6.90527 9.69751C6.82227 9.83423 6.78076 9.9856 6.78076 10.1516L6.57568 11.7629C6.57568 11.8606 6.51709 11.9167 6.3999 11.9314C6.28271 11.946 6.20459 11.8899 6.16553 11.7629L5.35986 8.80396C5.26221 8.63794 5.24023 8.46948 5.29395 8.29858C5.34766 8.12769 5.45752 8.00806 5.62354 7.9397Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="flex w-8 h-8 text-[#ACACAC] border border-[#ACACAC] rounded-[5px] transition-all cursor-pointer hover:border-white hover:text-white duration-300 items-center justify-center"
+                >
+                  <svg
+                    width="16"
+                    height="13"
+                    viewBox="0 0 16 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.6675 4.99028C15.6675 4.82502 15.6581 4.64287 15.6394 4.44381C15.6206 4.24475 15.6112 4.03631 15.6112 3.81847C15.5811 3.59312 15.5511 3.36965 15.521 3.14806C15.491 2.92647 15.4647 2.71802 15.4422 2.52272C15.3821 2.29737 15.3051 2.09831 15.2112 1.92555C15.1173 1.75278 14.9877 1.59879 14.8225 1.46358C14.6797 1.32086 14.5164 1.20819 14.3323 1.12556C14.1483 1.04293 13.9549 0.986596 13.7521 0.95655C13.4366 0.91148 13.076 0.873921 12.6704 0.843876C12.2723 0.821341 11.8329 0.800684 11.3521 0.781905C10.8714 0.763125 10.3531 0.74998 9.79721 0.742469C9.23384 0.734958 8.62916 0.731201 7.98316 0.731201C7.33716 0.731201 6.73248 0.734958 6.16911 0.742469C5.60574 0.74998 5.0818 0.763125 4.5973 0.781905C4.11281 0.800684 3.6715 0.821341 3.27338 0.843876C2.87527 0.873921 2.52222 0.91148 2.21425 0.95655C2.01895 0.986596 1.8274 1.04293 1.63961 1.12556C1.45182 1.20819 1.29032 1.32086 1.15511 1.46358C1.01239 1.59879 0.886574 1.75278 0.777656 1.92555C0.668737 2.09831 0.587988 2.29737 0.535407 2.52272C0.475314 2.71802 0.432122 2.91895 0.405831 3.12552C0.379541 3.33209 0.366396 3.56307 0.366396 3.81847C0.336349 4.03631 0.319448 4.24475 0.315692 4.44381C0.311936 4.64287 0.310059 4.82502 0.310059 4.99028C0.310059 5.15553 0.310059 5.34145 0.310059 5.54801C0.310059 5.75458 0.310059 5.99683 0.310059 6.27476C0.310059 6.5602 0.310059 6.81184 0.310059 7.02968C0.310059 7.24751 0.310059 7.42779 0.310059 7.57051C0.310059 7.73577 0.319448 7.91605 0.338227 8.11135C0.357006 8.30665 0.366396 8.51697 0.366396 8.74232C0.396442 8.96767 0.42461 9.18926 0.450901 9.4071C0.477192 9.62494 0.50536 9.8315 0.535407 10.0268C0.587988 10.2522 0.661226 10.4512 0.755121 10.624C0.849016 10.7967 0.982347 10.9545 1.15511 11.0972C1.29032 11.2399 1.45182 11.3526 1.63961 11.4352C1.8274 11.5179 2.01895 11.5742 2.21425 11.6042C2.53725 11.6418 2.8978 11.6756 3.29592 11.7056C3.69403 11.7357 4.13346 11.7601 4.61421 11.7789C5.09495 11.7977 5.617 11.8108 6.18037 11.8183C6.73623 11.8258 7.33716 11.8296 7.98316 11.8296C8.62916 11.8296 9.23384 11.8258 9.79721 11.8183C10.3681 11.8108 10.8939 11.7977 11.3746 11.7789C11.8554 11.7601 12.2948 11.7357 12.6929 11.7056C13.091 11.6756 13.4441 11.6418 13.7521 11.6042C13.9549 11.5742 14.1483 11.5179 14.3323 11.4352C14.5164 11.3526 14.6797 11.2399 14.8225 11.0972C14.9652 10.9545 15.0891 10.7967 15.1943 10.624C15.2995 10.4512 15.3821 10.2522 15.4422 10.0268C15.4948 9.8315 15.5361 9.63245 15.5661 9.42963C15.5962 9.22682 15.6112 8.99772 15.6112 8.74232C15.6337 8.51697 15.6487 8.30665 15.6563 8.11135C15.6638 7.91605 15.6675 7.73577 15.6675 7.57051C15.6675 7.39775 15.6675 7.20996 15.6675 7.00714C15.6675 6.80433 15.6675 6.5602 15.6675 6.27476C15.6675 5.99683 15.6675 5.74895 15.6675 5.53111C15.6675 5.31328 15.6675 5.133 15.6675 4.99028ZM10.9578 6.72546L6.52966 9.4747C6.49962 9.49724 6.46018 9.52165 6.41136 9.54794C6.36253 9.57423 6.30807 9.58738 6.24798 9.58738C6.1954 9.58738 6.15033 9.58362 6.11277 9.57611C6.07521 9.5686 6.02639 9.55358 5.96629 9.53104C5.88367 9.47095 5.81606 9.39959 5.76348 9.31696C5.7109 9.23433 5.68461 9.13668 5.68461 9.02401V3.48045C5.68461 3.36777 5.7109 3.26824 5.76348 3.18186C5.81606 3.09548 5.88367 3.026 5.96629 2.97341C6.04892 2.91332 6.14282 2.88328 6.24798 2.88328C6.35314 2.88328 6.44704 2.91332 6.52966 2.97341L10.9578 5.72266C11.0404 5.77524 11.108 5.84097 11.1606 5.91984C11.2131 5.99871 11.2394 6.07946 11.2394 6.16209C11.2394 6.25223 11.2131 6.35551 11.1606 6.47194C11.108 6.58837 11.0404 6.67288 10.9578 6.72546Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="flex w-8 h-8 text-[#ACACAC] border border-[#ACACAC] rounded-[5px] transition-all cursor-pointer hover:border-white hover:text-white duration-300 items-center justify-center"
+                >
+                  <svg
+                    width="20"
+                    height="13"
+                    viewBox="0 0 20 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.2996 10.6795C19.2996 10.642 19.2883 10.6176 19.2658 10.6063C19.2433 10.5951 19.232 10.5706 19.232 10.5331C19.0743 10.2327 18.8321 9.89472 18.5054 9.51921C18.1787 9.1437 17.7863 8.74566 17.3281 8.32508C17.1028 8.13732 16.9263 7.97022 16.7987 7.82377C16.671 7.67732 16.5696 7.56655 16.4945 7.49144C16.3818 7.34124 16.318 7.2023 16.303 7.07462C16.288 6.94695 16.2992 6.80801 16.3368 6.6578C16.3743 6.54515 16.4701 6.38744 16.6241 6.18466C16.778 5.98188 16.9864 5.70776 17.2493 5.36229C17.3995 5.17453 17.5234 5.01682 17.621 4.88914C17.7187 4.76147 17.8238 4.6413 17.9365 4.52865C18.5072 3.77011 18.9222 3.14489 19.1813 2.65296C19.4404 2.16104 19.5324 1.79867 19.4573 1.56585L19.3784 1.487C19.3409 1.44945 19.2996 1.41565 19.2545 1.38561C19.2095 1.35557 19.1494 1.34055 19.0743 1.34055C18.9992 1.303 18.9072 1.28422 18.7983 1.28422C18.6894 1.28422 18.5786 1.303 18.4659 1.34055H15.582C15.5445 1.34055 15.5163 1.34055 15.4975 1.34055C15.4787 1.34055 15.4318 1.34055 15.3567 1.34055C15.3191 1.34055 15.2835 1.34055 15.2497 1.34055C15.2159 1.34055 15.199 1.34055 15.199 1.34055H15.0525L14.9737 1.4194C14.9361 1.45696 14.9136 1.48136 14.9061 1.49263C14.8986 1.50389 14.8948 1.5283 14.8948 1.56585C14.7446 1.98643 14.5775 2.37696 14.3935 2.73745C14.2095 3.09795 14.0236 3.4697 13.8359 3.85273C13.7232 4.04048 13.6087 4.22636 13.4923 4.41036C13.3759 4.59436 13.2613 4.76147 13.1487 4.91167C13.036 5.06188 12.9384 5.19331 12.8558 5.30596C12.7732 5.41861 12.6943 5.51625 12.6192 5.59886C12.5441 5.67396 12.4709 5.73592 12.3995 5.78474C12.3282 5.83355 12.2737 5.89551 12.2362 5.97062C12.1986 6.00817 12.1517 6.04009 12.0954 6.06637C12.039 6.09266 12.0109 6.08703 12.0109 6.04947C11.9733 6.04947 11.9377 6.04572 11.9039 6.03821C11.8701 6.0307 11.8532 6.00817 11.8532 5.97062C11.8156 5.93307 11.7781 5.89551 11.7405 5.85796C11.703 5.82041 11.6654 5.78286 11.6279 5.74531C11.5903 5.70776 11.5659 5.65331 11.5546 5.58196C11.5434 5.51061 11.519 5.43739 11.4814 5.36229C11.4814 5.28718 11.4814 5.21584 11.4814 5.14824C11.4814 5.08065 11.4814 5.02808 11.4814 4.99053C11.4814 4.95298 11.4814 4.88539 11.4814 4.78775C11.4814 4.69012 11.4814 4.60375 11.4814 4.52865C11.4814 4.41599 11.4814 4.32212 11.4814 4.24701C11.4814 4.17191 11.4814 4.11558 11.4814 4.07803C11.4814 3.96538 11.4814 3.83583 11.4814 3.68938C11.4814 3.54293 11.4814 3.3946 11.4814 3.2444C11.4814 3.08668 11.4814 2.9515 11.4814 2.83884C11.4814 2.72619 11.4814 2.63231 11.4814 2.55721C11.4814 2.48211 11.4814 2.39386 11.4814 2.29247C11.4814 2.19108 11.4814 2.10284 11.4814 2.02773C11.4814 1.90757 11.4814 1.80994 11.4814 1.73483C11.4814 1.65973 11.4814 1.60341 11.4814 1.56585C11.4814 1.5283 11.4683 1.47761 11.442 1.41377C11.4157 1.34993 11.4025 1.29924 11.4025 1.26169C11.365 1.22414 11.3274 1.18659 11.2899 1.14904C11.2523 1.11148 11.2148 1.07393 11.1772 1.03638C11.1397 0.998831 11.089 0.974422 11.0252 0.963157C10.9613 0.951891 10.9106 0.923728 10.8731 0.878666C10.6778 0.841115 10.4675 0.807319 10.2422 0.777278C10.0169 0.747237 9.76907 0.732217 9.4987 0.732217C8.89037 0.732217 8.38343 0.750992 7.97787 0.788544C7.57232 0.826095 7.29444 0.882421 7.14424 0.957524C7.06913 0.995075 6.99779 1.03638 6.93019 1.08144C6.8626 1.1265 6.80627 1.18659 6.76121 1.26169C6.68611 1.33679 6.64668 1.39312 6.64293 1.43067C6.63917 1.46822 6.65607 1.487 6.69362 1.487C6.88138 1.52455 7.04848 1.58275 7.19493 1.66161C7.34138 1.74047 7.45216 1.83622 7.52726 1.94888L7.60612 2.09533C7.64367 2.13288 7.66808 2.19108 7.67934 2.26994C7.69061 2.3488 7.71502 2.44455 7.75257 2.55721C7.79012 2.66986 7.81265 2.78627 7.82016 2.90643C7.82767 3.0266 7.83142 3.16178 7.83142 3.31199C7.83142 3.54481 7.83142 3.76824 7.83142 3.98228C7.83142 4.19632 7.83142 4.37844 7.83142 4.52865C7.83142 4.7164 7.81828 4.87412 7.792 5.00179C7.76571 5.12947 7.75257 5.24963 7.75257 5.36229C7.75257 5.48245 7.73755 5.58008 7.70751 5.65519C7.67746 5.73029 7.64367 5.78662 7.60612 5.82417C7.56857 5.89927 7.54228 5.9556 7.52726 5.99315C7.51224 6.0307 7.48595 6.04947 7.4484 6.04947C7.4484 6.04947 7.44652 6.06262 7.44277 6.0889C7.43901 6.11519 7.41461 6.12833 7.36954 6.12833C7.33199 6.12833 7.29256 6.14148 7.25126 6.16776C7.20995 6.19405 7.14799 6.20719 7.06538 6.20719C7.02783 6.20719 6.97901 6.19029 6.91893 6.1565C6.85885 6.1227 6.80627 6.08703 6.76121 6.04947C6.68611 6.01192 6.61476 5.95747 6.54717 5.88613C6.47958 5.81478 6.42701 5.74155 6.38946 5.66645C6.31435 5.59135 6.23737 5.49747 6.15852 5.38482C6.07966 5.27216 6.00268 5.14073 5.92758 4.99053C5.85247 4.83281 5.76423 4.67322 5.66284 4.51175C5.56145 4.35028 5.47321 4.15314 5.3981 3.92032L5.25165 3.61615C5.2141 3.54105 5.15965 3.43027 5.0883 3.28382C5.01696 3.13737 4.94373 2.97027 4.86863 2.78252C4.79353 2.59476 4.71842 2.41827 4.64332 2.25304C4.56822 2.08782 4.48936 1.91133 4.40675 1.72357C4.3692 1.64847 4.33165 1.58839 4.2941 1.54332C4.25654 1.49826 4.21899 1.45696 4.18144 1.4194H4.10258C4.10258 1.4194 4.08756 1.40626 4.05752 1.37998C4.02748 1.35369 3.99369 1.34055 3.95613 1.34055C3.91858 1.34055 3.88103 1.3274 3.84348 1.30112C3.80593 1.27483 3.76838 1.26169 3.73083 1.26169H0.99334C0.843135 1.26169 0.726726 1.27859 0.644113 1.31238C0.561501 1.34618 0.501419 1.38185 0.463867 1.4194L0.38501 1.487C0.38501 1.487 0.38501 1.50389 0.38501 1.53769C0.38501 1.57149 0.38501 1.60716 0.38501 1.64471C0.38501 1.68226 0.388765 1.72357 0.396275 1.76863C0.403785 1.81369 0.426316 1.87377 0.463867 1.94888C0.651624 2.407 0.856278 2.86325 1.07783 3.31762C1.29938 3.77199 1.52281 4.22824 1.74812 4.68636C1.98094 5.09943 2.20437 5.48996 2.41841 5.85796C2.63245 6.22597 2.81458 6.54515 2.96478 6.81552C3.16005 7.07838 3.33842 7.33936 3.49989 7.59846C3.66136 7.85757 3.83973 8.09977 4.03499 8.32508C4.22275 8.5579 4.37295 8.74941 4.48561 8.89962C4.59826 9.04982 4.67336 9.16247 4.71091 9.23758C4.79353 9.31268 4.85549 9.37276 4.89679 9.41782C4.9381 9.46288 4.97753 9.50419 5.01508 9.54174L5.25165 9.77831C5.32676 9.85342 5.42063 9.94354 5.53329 10.0487C5.64594 10.1538 5.77737 10.2627 5.92758 10.3754C6.08529 10.4955 6.25427 10.612 6.43452 10.7246C6.61476 10.8373 6.80252 10.9499 6.99779 11.0626C7.18554 11.1752 7.3902 11.2729 7.61175 11.3555C7.8333 11.4381 8.05673 11.5169 8.28204 11.592C8.55241 11.6747 8.804 11.731 9.03682 11.761C9.26964 11.7911 9.50246 11.7873 9.73527 11.7498H10.8731C10.9857 11.7498 11.0834 11.731 11.166 11.6934C11.2486 11.6559 11.3274 11.5996 11.4025 11.5244L11.4814 11.4456C11.4814 11.408 11.4927 11.3818 11.5152 11.3667C11.5377 11.3517 11.549 11.3254 11.549 11.2879C11.549 11.2503 11.549 11.2109 11.549 11.1696C11.549 11.1283 11.549 11.0663 11.549 10.9837C11.549 10.8335 11.5528 10.6983 11.5603 10.5782C11.5678 10.458 11.5903 10.3416 11.6279 10.2289C11.6654 10.1163 11.6917 10.0186 11.7067 9.93603C11.7217 9.85342 11.748 9.77456 11.7856 9.69946C11.8231 9.62435 11.8607 9.56427 11.8982 9.51921C11.9358 9.47415 11.9733 9.43284 12.0109 9.39529C12.0484 9.35774 12.0822 9.32207 12.1123 9.28827C12.1423 9.25447 12.1573 9.23758 12.1573 9.23758H12.2362C12.3113 9.20003 12.3995 9.19815 12.5009 9.23194C12.6023 9.26574 12.6906 9.32019 12.7657 9.39529C12.8783 9.47039 12.9891 9.56239 13.098 9.67129C13.2069 9.78019 13.2989 9.89097 13.374 10.0036C13.4491 10.1163 13.5448 10.2327 13.6613 10.3528C13.7777 10.473 13.911 10.6082 14.0612 10.7584C14.2114 10.9086 14.3428 11.0382 14.4555 11.1471C14.5681 11.256 14.6658 11.3292 14.7484 11.3667L14.9737 11.5244C15.0488 11.562 15.1276 11.5996 15.2102 11.6371C15.2929 11.6747 15.3905 11.7122 15.5031 11.7498C15.6158 11.7873 15.7134 11.8098 15.796 11.8173C15.8787 11.8249 15.9575 11.8286 16.0326 11.8286L18.6237 11.7498C18.7363 11.7498 18.8452 11.7329 18.9504 11.6991C19.0555 11.6653 19.1494 11.6296 19.232 11.592C19.3071 11.5545 19.3634 11.5151 19.401 11.4738C19.4385 11.4324 19.4573 11.3705 19.4573 11.2879C19.4573 11.2503 19.4573 11.1996 19.4573 11.1358C19.4573 11.072 19.4573 11.0213 19.4573 10.9837C19.3822 10.9086 19.3371 10.8504 19.3221 10.8091C19.3071 10.7678 19.2996 10.7246 19.2996 10.6795Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div
+                  class="flex w-8 h-8 text-[#ACACAC] border border-[#ACACAC] rounded-[5px] transition-all cursor-pointer hover:border-white hover:text-white duration-300 items-center justify-center"
+                >
+                  <svg
+                    width="14"
+                    height="18"
+                    viewBox="0 0 14 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.758125 17.5V0.219999H7.89813C8.06613 0.219999 8.28213 0.227999 8.54613 0.243999C8.81013 0.251999 9.05413 0.276 9.27813 0.316C10.2781 0.467999 11.1021 0.799999 11.7501 1.312C12.4061 1.824 12.8901 2.472 13.2021 3.256C13.5221 4.032 13.6821 4.896 13.6821 5.848C13.6821 7.256 13.3261 8.468 12.6141 9.484C11.9021 10.492 10.8101 11.116 9.33813 11.356L8.10213 11.464H3.65013V17.5H0.758125ZM10.6821 17.5L7.27413 10.468L10.2141 9.82L13.9581 17.5H10.6821ZM3.65013 8.764H7.77813C7.93813 8.764 8.11813 8.756 8.31813 8.74C8.51813 8.724 8.70213 8.692 8.87013 8.644C9.35013 8.524 9.72613 8.312 9.99813 8.008C10.2781 7.704 10.4741 7.36 10.5861 6.976C10.7061 6.592 10.7661 6.216 10.7661 5.848C10.7661 5.48 10.7061 5.104 10.5861 4.72C10.4741 4.328 10.2781 3.98 9.99813 3.676C9.72613 3.372 9.35013 3.16 8.87013 3.04C8.70213 2.992 8.51813 2.964 8.31813 2.956C8.11813 2.94 7.93813 2.932 7.77813 2.932H3.65013V8.764Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="block w-full border border-[#ACACAC] lg:hidden"></div>
+
+        <div
+          class="container-base pt-6 text-xs text-gray-400 leading-relaxed border-[#ACACAC] lg:mt-10 lg:border-t"
+        >
+          <p>
+            Все права на материалы, находящиеся на сайте www.sivik.ru являются
+            объектом исключительных прав, в том числе зарегистрированный
+            товарный знак Sivik, фото- и видеоизображения, статьи и т.п.,
+            охраняются в соответствии с законодательством РФ. Запрещается
+            автоматизированное извлечение информации сайта любыми сервисами без
+            официального разрешения. Цитирование с сайта допускается только при
+            наличии прямой ссылки на сайт www.sivik.ru. Данные носят
+            информационный характер. Cогласно статьи 437 гражданского кодекса РФ
+            не является публичной офертой.
+          </p>
+          <div class="flex flex-wrap items-center justify-between">
+            <p class="lg:mt-4">
+              © 2025 ООО НПО «Компания СИВИК» — Оборудование для автосервиса
+            </p>
+            <a
+              href="#"
+              class="transition-all underline hover:text-white duration-300 lg:mt-2"
+              >Политика конфиденциальности</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      let swiper = new Swiper(".sivik-main__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      let swiperHero = new Swiper(".sivik-hero__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 4000,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      let map;
+
+      function initMap() {
+        map = new ymaps.Map("map", {
+          center: [41.311151, 69.279737], // Tashkent
+          zoom: 11,
+        });
+
+        let placemark = new ymaps.Placemark(
+          [41.311151, 69.279737],
+          {},
+          { preset: "islands#blueCircleDotIcon" },
+        );
+
+        map.geoObjects.add(placemark);
+      }
+
+      function updateMap() {
+        const city = document.getElementById("city").value.trim();
+
+        if (city.toLowerCase() === "ташкент") {
+          map.setCenter([41.311151, 69.279737], 11);
+        }
+      }
+
+      ymaps.ready(initMap);
+    </script>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
