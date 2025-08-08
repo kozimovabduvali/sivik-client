@@ -1838,6 +1838,11 @@
       aspect-ratio: var(--aspect-video);
     }
   }
+  .max-md\:\!max-h-145 {
+    @media (width < 48rem) {
+      max-height: calc(var(--spacing) * 145) !important;
+    }
+  }
   .max-md\:max-w-80 {
     @media (width < 48rem) {
       max-width: calc(var(--spacing) * 80);
