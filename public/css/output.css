@@ -988,6 +988,9 @@
   .gap-y-5 {
     row-gap: calc(var(--spacing) * 5);
   }
+  .\!overflow-hidden {
+    overflow: hidden !important;
+  }
   .\!overflow-visible {
     overflow: visible !important;
   }
@@ -2100,6 +2103,11 @@
   .md\:gap-10 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:\!overflow-visible {
+    @media (width >= 48rem) {
+      overflow: visible !important;
     }
   }
   .md\:bg-brand-gray {
