@@ -58,8 +58,8 @@
     <main class="overflow-x-hidden">
       <!-- Hero -->
       <section>
-        <div class="bg-brand-gray">
-          <div class="swiper sivik-hero__swiper !container-base !overflow-visible">
+        <div class="relative">
+          <div class="swiper sivik-hero__swiper !z-10 !container-base !overflow-visible">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="grid md:grid-cols-2">
@@ -70,7 +70,7 @@
                   </div>
                   <!-- rigt -->
                   <div
-                    class="relative max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5">
+                    class="relative max-md:max-w-80 max-md:mx-auto max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10  justify-center xl:px-27.5">
                     <div
                       class="mx-auto md:absolute top-0 right-0 -translate-y-40 md:-translate-y-1/2 size-55 flex items-end justify-center rounded-full bg-primary overflow-hidden p-7">
                       <p class="font-bold text-lg text-white xl:text-[1.6875rem]">
@@ -100,7 +100,7 @@
                   </div>
                   <!-- rigt -->
                   <div
-                    class="relative max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5">
+                    class="relative max-md:max-w-80 max-md:mx-auto max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 justify-center xl:px-27.5">
 
                     <h3 class="uppercase mb-1 font-bold text-5xl xl:text-7xl">
                       ТР 532
@@ -138,7 +138,7 @@
                   </div>
                   <!-- rigt -->
                   <div
-                    class="relative max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 bg-brand-gray justify-center xl:px-27.5">
+                    class="relative max-md:max-w-80 max-md:mx-auto max-md:text-center overflow-hidden flex flex-col max-md:items-center px-7.5 py-10 justify-center xl:px-27.5">
                     <div
                       class="mx-auto md:absolute top-0 right-0 -translate-y-40 md:-translate-y-1/2 size-55 flex items-end justify-center rounded-full bg-primary overflow-hidden p-7">
                       <p class="font-bold text-lg text-white xl:text-[1.6875rem]">
@@ -181,6 +181,7 @@
             <div class="max-lg:!hidden swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
           </div>
+          <img class="size-full object-cover absolute top-0 left-0 z-0" src="./assets/images/home/gradient.png" alt="img">
         </div>
       </section>
 
