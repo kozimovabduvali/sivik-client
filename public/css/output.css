@@ -1351,6 +1351,9 @@
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
+  .\!text-left {
+    text-align: left !important;
+  }
   .text-center {
     text-align: center;
   }
