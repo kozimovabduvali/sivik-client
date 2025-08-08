@@ -1243,6 +1243,9 @@
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
@@ -2458,6 +2461,11 @@
   .lg\:pt-10 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:pt-12\.5 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 12.5);
     }
   }
   .lg\:pb-12\.5 {
