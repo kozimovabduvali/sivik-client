@@ -2728,6 +2728,11 @@
       font-size: 35px;
     }
   }
+  .xl\:text-\[80px\] {
+    @media (width >= 80rem) {
+      font-size: 80px;
+    }
+  }
 }
 @layer base {
   html {
