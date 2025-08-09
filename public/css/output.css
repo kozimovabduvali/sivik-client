@@ -1878,6 +1878,12 @@
       max-width: calc(var(--spacing) * 80);
     }
   }
+  .max-md\:translate-x-1\/2 {
+    @media (width < 48rem) {
+      --tw-translate-x: calc(1/2 * 100%);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .max-md\:flex-col {
     @media (width < 48rem) {
       flex-direction: column;
