@@ -1825,6 +1825,11 @@
       flex-direction: column;
     }
   }
+  .max-md\:\!relative {
+    @media (width < 48rem) {
+      position: relative !important;
+    }
+  }
   .max-md\:\!-mx-5 {
     @media (width < 48rem) {
       margin-inline: calc(var(--spacing) * -5) !important;

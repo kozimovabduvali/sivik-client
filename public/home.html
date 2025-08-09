@@ -116,10 +116,23 @@
     </div>
   </div>
   <!-- HEADER -->
-  <header id="top" x-data="{ scrolled: false }" x-init="window.addEventListener('scroll', () => {
-    scrolled = window.scrollY > 50
-  })" :class="{ 'pt-6': scrolled }"
-    class="xl:py-6 pb-6 border-b border-[#ECECEC] bg-white sticky top-0 transition-all z-30 duration-300">
+  <header id="top"
+  x-data="{ scrolled: false, isMobile: window.innerWidth < 1024 }"
+  x-init="
+    window.addEventListener('scroll', () => {
+      scrolled = window.scrollY > 50
+    });
+    window.addEventListener('resize', () => {
+      isMobile = window.innerWidth < 1024
+    });
+  "
+  :class="{
+    'pt-6': scrolled,
+    'sticky top-0': !isMobile,
+    'relative': isMobile
+  }"
+  class="xl:py-6 pb-6 border-b border-[#ECECEC] bg-white transition-all z-30 duration-300"
+>
     <div class="container-base mx-auto px-4 flex items-center gap-5">
       <!-- Hamburger Button (Mobile) -->
       <button class="max-md:hidden xl:hidden hamburgerOpenBtn">
