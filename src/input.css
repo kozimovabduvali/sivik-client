@@ -165,3 +165,19 @@
 .sivik-swiper .swiper-pagination-bullet-active {
  @apply !bg-neutral 
 }
+
+
+/* Scroll styles */
+.no-scroll::-webkit-scrollbar {
+  @apply h-0 w-1;
+}
+
+/* Track */
+.no-scroll::-webkit-scrollbar-track {
+  @apply bg-brand-gray rounded-full;
+}
+
+/* Handle */
+.no-scroll::-webkit-scrollbar-thumb {
+  @apply bg-neutral rounded-full;
+}
