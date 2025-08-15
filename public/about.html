@@ -11,6 +11,87 @@
 
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <style>
+    .about-page-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 121px 65px repeat(2, 137px) 46px 138px;
+    }
+
+    .about-page-grid__item-1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .about-page-grid__item-2 {
+      grid-area: 1 / 2 / 3 / 3;
+    }
+
+    .about-page-grid__item-3 {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .about-page-grid__item-4 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .about-page-grid__item-5 {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .about-page-grid__item-6 {
+      grid-area: 4 / 2 / 6 / 3;
+    }
+
+    .about-page-grid__item-7 {
+      grid-area: 5 / 1 / 7 / 2;
+    }
+
+    .about-page-grid__item-8 {
+      grid-area: 6 / 2 / 7 / 3;
+    }
+
+    @media (min-width: 768px) {
+      .about-page-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 270px 40px 100px 305px;
+      }
+
+      .about-page-grid__item-1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .about-page-grid__item-2 {
+        grid-area: 1 / 2 / 4 / 3;
+      }
+
+      .about-page-grid__item-3 {
+        grid-area: 1 / 3 / 3 / 4;
+      }
+
+      .about-page-grid__item-4 {
+        grid-area: 1 / 4 / 4 / 5;
+      }
+
+      .about-page-grid__item-5 {
+        grid-area: 2 / 1 / 5 / 2;
+      }
+
+      .about-page-grid__item-6 {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+      .about-page-grid__item-7 {
+        grid-area: 3 / 3 / 5 / 4;
+      }
+
+      .about-page-grid__item-8 {
+        grid-area: 4 / 4 / 5 / 5;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
@@ -639,6 +720,7 @@
         </div>
       </div>
     </section>
+
     <section class="mb-4 lg:mb-8">
       <div class="container-base ">
         <!-- Tittle & Desc -->
@@ -715,6 +797,80 @@
               <p class="text-[10px] lg:text-sm leading-normal">
                 География поставок оборудования
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 lg:mb-8">
+      <div class="container-base ">
+        <!-- Tittle & Desc -->
+        <div class="max-w-270 w-full mx-auto text-center">
+          <!-- Tittle -->
+          <h1 class="font-medium uppercase text-xl lg:text-[2rem] text-center pb-7.5">
+            производство полного цикла
+          </h1>
+
+          <p class="max-md:text-left lg:text-xl mb-2.5 md:mb-5 lg:mb-7.5">
+            Наше конструкторское подразделение постоянно ведет разработку нового оборудования. Полный цикл разработок от
+            электроники до дизайна изделия, позволяет нам не только предлагать продукцию мирового уровня, но и опережать
+            наших зарубежных конкурентов.
+          </p>
+        </div>
+
+        <div>
+          <!-- Grid -->
+          <div class="about-page-grid rounded">
+            <!-- 1 -->
+            <div
+              class="about-page-grid__item-1 bg-[#939393] text-center flex flex-col items-center justify-center text-white uppercase p-3.5">
+              <p class="text-[10px] md:text-base lg:text-2xl">
+                Контроль качества
+              </p>
+              <h3 class="text-[10px] md:text-base lg:text-[30px]">
+                на всех этапах производства
+              </h3>
+            </div>
+            <!-- 2 -->
+            <div class="about-page-grid__item-2  overflow-hidden">
+              <img class="object-cover size-full" src="https://sivik.ru/upload/content_img/about-page-grid02.jpg"
+                alt="Img">
+            </div>
+            <!-- 3 -->
+            <div class="about-page-grid__item-3  overflow-hidden">
+              <img class="object-cover size-full" src="https://sivik.ru/upload/content_img/about-page-grid04.jpg"
+                alt="Img">
+            </div>
+            <!-- 4 -->
+            <div class="about-page-grid__item-4  overflow-hidden">
+              <img class="object-cover size-full" src="https://sivik.ru/upload/content_img/about-page-grid06.jpg"
+                alt="Img">
+            </div>
+            <!-- 5 -->
+            <div class="about-page-grid__item-5  overflow-hidden">
+              <img class="object-cover size-full" src="https://sivik.ru/upload/content_img/about-page-grid01.jpg"
+                alt="Img">
+            </div>
+            <!-- 6 -->
+            <div class="about-page-grid__item-6  overflow-hidden">
+              <img class="object-cover size-full" src="https://sivik.ru/upload/content_img/about-page-grid03.jpg"
+                alt="Img">
+            </div>
+            <!-- 7 -->
+            <div class="about-page-grid__item-7  overflow-hidden">
+              <img class="object-cover size-full" src="https://sivik.ru/upload/content_img/about-page-grid05.jpg"
+                alt="Img">
+            </div>
+            <!-- 8 -->
+            <div
+              class="about-page-grid__item-8 bg-primary text-center flex flex-col items-center justify-center text-white uppercase p-3.5">
+              <p class="text-[10px] md:text-base lg:text-2xl">
+                Производство
+              </p>
+              <h3 class="text-[10px] md:text-base lg:text-[30px]">
+                полного цикла
+              </h3>
             </div>
           </div>
         </div>
