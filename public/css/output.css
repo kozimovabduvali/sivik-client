@@ -1413,6 +1413,9 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .\!text-primary {
+    color: var(--color-primary) !important;
+  }
   .text-\[\#3A3D43\] {
     color: #3A3D43;
   }
@@ -3160,6 +3163,10 @@
 }
 .swiper-about .swiper-pagination-bullet-active {
   border-color: var(--color-primary) !important;
+}
+.swiper-about .swiper-button-disabled {
+  cursor: default !important;
+  opacity: 50% !important;
 }
 .no-scroll::-webkit-scrollbar {
   height: calc(var(--spacing) * 0);

@@ -175,6 +175,10 @@
   @apply !border-primary
 }
 
+.swiper-about .swiper-button-disabled {
+  @apply !opacity-50 !cursor-default
+}
+
 
 /* Scroll styles */
 .no-scroll::-webkit-scrollbar {

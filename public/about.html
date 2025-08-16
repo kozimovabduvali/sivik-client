@@ -1249,14 +1249,25 @@
         <!-- Navigation & Pagination -->
         <div class="flex items-center justify-between py-5 md:py-7.5 px-5 lg:px-7 xl:px-10">
           <!-- Prev -->
-          <div class="swiper-button-prev-history max-lg:!hidden"></div>
+          <button class="swiper-button-prev-history max-lg:!hidden !text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="auto"
+              height="54">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
 
           <!-- Pagination -->
           <div class="lg:container-base swiper-pagination-history !flex !gap-2.5 no-scroll overflow-x-auto"></div>
 
           <!-- Next -->
-          <div class="swiper-button-next-history max-lg:!hidden"></div>
+          <button class="swiper-button-next-history max-lg:!hidden !text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="auto"
+              height="54">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
+
         <!-- Swiper -->
         <div class="swiper swiper-about__history">
           <div class="swiper-wrapper !h-fit">
