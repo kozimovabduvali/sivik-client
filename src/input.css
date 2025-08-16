@@ -167,6 +167,14 @@
 }
 
 
+.swiper-about .swiper-pagination-bullet {
+  @apply !shrink-0 !size-15 md:!size-17.5 lg:!size-20 !rounded-xl !flex !items-center !justify-center !m-0 !p-0 !bg-white border-2 !border-transparent !opacity-100 !text-lg md:!text-xl lg:!text-2xl !font-medium
+}
+
+.swiper-about .swiper-pagination-bullet-active {
+  @apply !border-primary
+}
+
 /* Scroll styles */
 .no-scroll::-webkit-scrollbar {
   @apply h-0 w-1;
