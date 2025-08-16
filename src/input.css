@@ -175,6 +175,7 @@
   @apply !border-primary
 }
 
+
 /* Scroll styles */
 .no-scroll::-webkit-scrollbar {
   @apply h-0 w-1;

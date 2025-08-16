@@ -1248,15 +1248,15 @@
       <div class="swiper-about bg-brand-gray">
         <!-- Navigation & Pagination -->
         <div class="flex items-center justify-between py-5 md:py-7.5 px-5 lg:px-7 xl:px-10">
-          <div class="max-lg:!hidden swiper-button-prev-history">
-            Prev
-          </div>
-          <div class="lg:container-base swiper-pagination-history !flex !gap-2.5 no-scroll overflow-x-auto"></div>
-          <div class="max-lg:!hidden swiper-button-next-history">
-            Next
-          </div>
-        </div>
+          <!-- Prev -->
+          <div class="swiper-button-prev-history max-lg:!hidden"></div>
 
+          <!-- Pagination -->
+          <div class="lg:container-base swiper-pagination-history !flex !gap-2.5 no-scroll overflow-x-auto"></div>
+
+          <!-- Next -->
+          <div class="swiper-button-next-history max-lg:!hidden"></div>
+        </div>
         <!-- Swiper -->
         <div class="swiper swiper-about__history">
           <div class="swiper-wrapper !h-fit">
@@ -1599,7 +1599,7 @@
         el: ".swiper-pagination-history",
         clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + years[index] + "</span>";
+          return '<span class="' + className + '">' + (years[index] || index + 1) + "</span>";
         },
       },
     });
