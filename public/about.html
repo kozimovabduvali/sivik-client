@@ -1000,12 +1000,13 @@
           </div>
           <!-- 4 -->
           <div class="md:grid md:grid-cols-2">
+            <!-- Left -->
             <div>
-              <div class="!h-63.75 md:h-80 lg:h-105 xl:!h-133.75 swiper sivik-about__swiper1">
+              <div class="!h-63.75 md:h-80 lg:h-105 xl:!h-133.75 swiper sivik-about__swiper2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide !h-full">
                     <img class="object-cover size-full"
-                      src="https://sivik.ru/upload/iblock/b55/kstwh3kknf6bspd9y6aqg1xacz6cne7e.jpg" alt="img">
+                      src="https://sivik.ru/upload/iblock/813/plk365w8y83exhguiyj3vakutg523syx.jpg" alt="img">
                   </div>
 
                   <div class="swiper-slide !h-full">
@@ -1022,6 +1023,7 @@
                 <div class="swiper-button-prev"></div>
               </div>
             </div>
+
             <!-- Right -->
             <div class="bg-brand-gray flex items-center px-5 lg:px-[clamp(15px,5vw,120px)] py-7.5 lg:py-20">
               <div class="max-w-145 w-full">
@@ -1219,7 +1221,19 @@
 
   <script>
 
-    var swiper = new Swiper(".sivik-about__swiper1", {
+    let swiperAbout1 = new Swiper(".sivik-about__swiper1", {
+      autoplay: {
+        delay: 5000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    let swiperAbout2 = new Swiper(".sivik-about__swiper2", {
+      autoplay: {
+        delay: 5000,
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
