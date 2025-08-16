@@ -2325,6 +2325,11 @@
       background-color: var(--color-brand-gray);
     }
   }
+  .md\:object-cover {
+    @media (width >= 48rem) {
+      object-fit: cover;
+    }
+  }
   .md\:p-7 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 7);
